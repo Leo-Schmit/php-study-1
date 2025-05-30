@@ -1,0 +1,20 @@
+services:
+  analyzer:
+    build: .
+    image: php-analyzer:latest
+    environment:
+      - GITHUB_TOKEN
+    volumes:
+      - ./workspace:/app/workspace
+      - ./vendor:/app/vendor
+      - ./results:/app/results
+      - ./combined_repo_data.json:/app/combined_repo_data.json
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  php_runner:
+    build: .
+    image: php-analyzer:latest
+    volumes:
+      - ./workspace:/app/workspace
+      - ./vendor:/app/vendor
+      - ./combined_repo_data.json:/app/combined_repo_data.json

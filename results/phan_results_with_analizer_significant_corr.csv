@@ -1,0 +1,13 @@
+warning_type,rho,p_value
+PhanParamSignatureMismatch,0.437,p < 0.001
+PhanTypeMismatchArgumentNullable,0.423,p < 0.001
+PhanTypeMismatchDimFetchNullable,0.402,p < 0.001
+PhanUndeclaredClassConstant,-0.375,p < 0.001
+PhanTypeMismatchArgumentNullableInternal,0.368,p < 0.001
+PhanCommentParamOutOfOrder,0.357,p < 0.001
+PhanRedefinedExtendedClass,0.357,p < 0.001
+PhanTypeInvalidLeftOperandOfNumericOp,0.356,p < 0.001
+PhanTypeMismatchProperty,0.355,p < 0.001
+PhanAccessClassInternal,0.352,p < 0.001
+PhanPossiblyNullTypeMismatchProperty,0.352,p < 0.001
+PhanTypeExpectedObjectPropAccess,0.351,p < 0.001

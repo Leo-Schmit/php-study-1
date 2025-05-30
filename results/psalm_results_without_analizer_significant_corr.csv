@@ -1,0 +1,10 @@
+warning_type,rho,p_value
+PossiblyUndefinedVariable,0.434,p < 0.001
+UnusedMethod,0.406,p < 0.001
+PossiblyNullIterator,0.397,p < 0.001
+UndefinedVariable,0.388,p < 0.001
+UndefinedGlobalVariable,0.38,p < 0.001
+InvalidGlobal,0.377,p < 0.001
+UnnecessaryVarAnnotation,0.373,p < 0.001
+PossiblyNullPropertyFetch,0.36,p < 0.001
+UnsupportedPropertyReferenceUsage,0.352,p < 0.001

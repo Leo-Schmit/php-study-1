@@ -1,0 +1,8 @@
+warning_type,rho,p_value
+booleanNot.alwaysFalse,0.413,p < 0.001
+variable.undefined,0.395,p < 0.001
+cast.double,0.383,p < 0.001
+booleanAnd.leftAlwaysTrue,0.37,p < 0.001
+booleanAnd.rightAlwaysTrue,0.367,p < 0.001
+notIdentical.alwaysTrue,0.364,p < 0.001
+empty.variable,0.353,p < 0.001

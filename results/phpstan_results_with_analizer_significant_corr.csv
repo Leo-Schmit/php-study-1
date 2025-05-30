@@ -1,0 +1,14 @@
+warning_type,rho,p_value
+cast.int,0.414,p < 0.001
+isset.offset,0.409,p < 0.001
+property.nonObject,0.408,p < 0.001
+foreach.nonIterable,0.402,p < 0.001
+property.notFound,0.393,p < 0.001
+offsetAccess.notFound,0.392,p < 0.001
+return.unusedType,0.379,p < 0.001
+offsetAccess.nonArray,0.373,p < 0.001
+variable.undefined,0.368,p < 0.001
+offsetAccess.invalidOffset,0.367,p < 0.001
+echo.nonString,0.356,p < 0.001
+identical.alwaysFalse,0.353,p < 0.001
+booleanAnd.rightAlwaysTrue,0.351,p < 0.001
