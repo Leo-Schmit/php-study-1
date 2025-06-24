@@ -5,6 +5,7 @@ import json
 import subprocess
 import shutil
 from pathlib import Path
+import base64
 
 import requests
 from requests.adapters import HTTPAdapter
@@ -15,6 +16,7 @@ if not GITHUB_TOKEN:
     print("[main] ERROR: GITHUB_TOKEN environment variable is not set.")
     sys.exit(1)
 
+graphql_url = "https://api.github.com/graphql"
 headers = {
     "Authorization": f"Bearer {GITHUB_TOKEN}",
     "Accept": "application/vnd.github.v4+json"
@@ -38,68 +40,95 @@ session.mount("https://", HTTPAdapter(max_retries=retry_strategy))
 
 
 def check_exists_analyzer(repo_full_name):
-    """
-    Check if the repository contains any supported analyzer config (PHPStan, Psalm, or Phan).
-    """
-    url = f"https://api.github.com/repos/{repo_full_name}/contents"
     print(f"[check_exists_analyzer] Checking analyzer for {repo_full_name}")
+    found = []
     try:
-        response = session.get(url)
+        contents_url = f"https://api.github.com/repos/{repo_full_name}/contents"
+        response = session.get(contents_url)
         if response.status_code != 200:
             print(
                 f"[check_exists_analyzer] Failed to fetch contents: {response.status_code}")
-            return False
+            return found
         items = response.json()
-        names = [item["name"].lower()
-                 for item in items if isinstance(item, dict) and "name" in item]
+        names = [item.get("name", "").lower()
+                 for item in items if isinstance(item, dict)]
 
         if any(name.startswith("phpstan.") for name in names):
-            return True
+            found.append("phpstan")
         if any(name.startswith("psalm") for name in names):
-            return True
+            found.append("psalm")
         if ".phan" in names:
-            return True
+            found.append("phan")
 
-        return False
+        comp_url = f"https://api.github.com/repos/{repo_full_name}/contents/composer.json"
+        comp_resp = session.get(comp_url)
+        if comp_resp.status_code == 200:
+            comp_info = comp_resp.json()
+            encoded = comp_info.get("content", "")
+            decoded = base64.b64decode(encoded).decode('utf-8')
+            composer = json.loads(decoded)
+            dev_reqs = composer.get("require-dev", {}) or {}
+            pkg_map = {
+                "phpstan/phpstan": "phpstan",
+                "vimeo/psalm": "psalm",
+                "phan/phan": "phan"
+            }
+            for pkg, name in pkg_map.items():
+                if pkg in dev_reqs and name not in found:
+                    found.append(name)
+
+        return found
 
     except Exception as e:
         print(f"[check_exists_analyzer] Error: {e}")
-        return False
+        return found
 
 
 def fetch_repositories():
-    """
-    Retrieve up to 1000 PHP repositories with more than 1500 stars using REST API.
-    """
-    def paginate(query, max_pages=10):
-        repos = []
-        page = 1
+    repos = []
+    cursor = None
+    fetched = 0
+    max_repos = 1000
 
-        while page <= max_pages:
-            params = {
-                "q": query,
-                "sort": "stars",
-                "order": "desc",
-                "per_page": per_page,
-                "page": page
-            }
-            url = "https://api.github.com/search/repositories"
-            print(f"[fetch_repositories] Fetching page {page}")
-            try:
-                resp = session.get(url, params=params)
-                resp.raise_for_status()
-                items = resp.json().get("items", [])
-                repos.extend(item["full_name"] for item in items)
-                if len(items) < per_page:
-                    break
-                page += 1
-            except Exception as e:
-                print(f"[fetch_repositories] Error: {e}")
-                break
+    graphql_query = '''
+    query($query: String!, $first: Int!, $after: String) {
+      search(query: $query, type: REPOSITORY, first: $first, after: $after) {
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+        nodes {
+          ... on Repository {
+            nameWithOwner
+            stargazerCount
+          }
+        }
+      }
+    }
+    '''
 
-        return repos
+    while fetched < max_repos:
+        batch_size = min(100, max_repos - fetched)
+        variables = {"query": search_query, "first": batch_size, "after": cursor}
 
-    repos = paginate(search_query)
+        print(f"[fetch_repositories] Fetching {batch_size} repos after cursor {cursor}")
+        response = session.post(
+            graphql_url,
+            json={"query": graphql_query, "variables": variables}
+        )
+        response.raise_for_status()
+        data = response.json().get("data", {}).get("search", {})
+
+        nodes = data.get("nodes", [])
+        for node in nodes:
+            repos.append(node["nameWithOwner"])
+
+        fetched += len(nodes)
+        page_info = data.get("pageInfo", {})
+        if not page_info.get("hasNextPage") or not nodes:
+            break
+        cursor = page_info.get("endCursor")
+
     print(f"[fetch_repositories] Retrieved {len(repos)} repositories")
     return repos
 
@@ -152,7 +181,8 @@ def run_phpstan(local_dir):
             errors="replace"
         )
     except FileNotFoundError:
-        print(f"[run_phpstan] Command 'phpstan' not found. Please install it and make sure it's in PATH.")
+        print(
+            f"[run_phpstan] Command 'phpstan' not found. Please install it and make sure it's in PATH.")
         return
     except Exception as e:
         print(f"[run_phpstan] Failed to start PHPStan: {e}")
@@ -226,7 +256,8 @@ def run_psalm(local_dir):
         print(f"[run_psalm] Failed to run Psalm for {local_dir}: {e}")
         return
     except FileNotFoundError:
-        print(f"[run_psalm] Command 'psalm' not found. Please make sure it is installed and in PATH.")
+        print(
+            f"[run_psalm] Command 'psalm' not found. Please make sure it is installed and in PATH.")
         return
 
     try:
@@ -240,7 +271,8 @@ def run_psalm(local_dir):
 
         return dict(sorted(result.items(), key=lambda x: x[1], reverse=True))
     except FileNotFoundError:
-        print(f"[run_psalm] Report file '{report_path}' not found after running Psalm.")
+        print(
+            f"[run_psalm] Report file '{report_path}' not found after running Psalm.")
         return
     except json.JSONDecodeError as e:
         print(f"[run_psalm] Failed to parse JSON report: {e}")
@@ -326,7 +358,8 @@ def analyze_repository(repo_full_name, existing=None):
 
     try:
         subprocess.run(
-            ["composer", "install", "--ignore-platform-reqs", "--no-scripts", "--no-interaction"],
+            ["composer", "install", "--ignore-platform-reqs",
+                "--no-scripts", "--no-interaction"],
             check=True, cwd=local_dir
         )
     except subprocess.CalledProcessError as e:
@@ -362,6 +395,17 @@ def main():
             data = json.loads(output_file.read_text(encoding="utf-8")) or {}
         except Exception:
             data = {}
+
+    if "--update-analyzer-only" in sys.argv:
+        print("[main] Running in exists_analyzer-only mode")
+        for repo_full_name, entry in data.items():
+            analyzers = check_exists_analyzer(repo_full_name)
+            entry["exists_analyzer"] = analyzers
+            print(f"[main] {repo_full_name}: exists_analyzer = {analyzers}")
+        output_file.write_text(json.dumps(data, indent=2), encoding="utf-8")
+        print(
+            f"[main] Updated exists_analyzer for all {len(data)} repos. Exiting.")
+        sys.exit(0)
 
     repos = fetch_repositories()
     print(f"[main] Processing {len(repos)} repositories")

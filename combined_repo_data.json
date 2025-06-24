@@ -85,7 +85,7 @@
       "cast.double": 1,
       "elseif.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 18252,
     "github_bugs": 179,
     "phan_results": {
@@ -370,7 +370,7 @@
       "nullCoalesce.property": 1,
       "notIdentical.alwaysTrue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 18583,
     "github_bugs": 2162,
     "phan_results": {
@@ -588,7 +588,9 @@
       "binaryOp.invalid": 1,
       "method.nonObject": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "stars": 11549,
     "github_bugs": 45,
     "phan_results": {
@@ -749,7 +751,9 @@
       "greaterOrEqual.alwaysFalse": 1,
       "require.fileNotFound": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "stars": 29531,
     "github_bugs": 11522,
     "phan_results": {
@@ -1112,7 +1116,9 @@
       "variable.undefined": 1,
       "echo.nonString": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 23493,
     "github_bugs": 2272,
     "phan_results": {
@@ -1360,7 +1366,7 @@
       "instanceof.alwaysTrue": 1,
       "booleanOr.alwaysTrue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 11391,
     "github_bugs": 6,
     "phan_results": {
@@ -1473,7 +1479,9 @@
       "if.alwaysTrue": 1,
       "empty.variable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [
+      "phan"
+    ],
     "stars": 21452,
     "github_bugs": 9,
     "phan_results": {
@@ -1599,7 +1607,9 @@
       "booleanOr.alwaysFalse": 1,
       "property.nonObject": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 21234,
     "github_bugs": 152,
     "phan_results": {
@@ -1740,7 +1750,7 @@
       "variable.undefined": 2,
       "new.static": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 14893,
     "github_bugs": 98,
     "phan_results": {
@@ -1821,7 +1831,9 @@
       "phpDoc.parseError": 1,
       "constructor.unusedParameter": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "stars": 14553,
     "github_bugs": 189,
     "phan_results": {
@@ -1864,7 +1876,7 @@
       "property.nonObject": 1,
       "variable.undefined": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 14436,
     "github_bugs": 445,
     "phan_results": {
@@ -1932,7 +1944,7 @@
       "nullCoalesce.variable": 1,
       "postInc.type": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 12495,
     "github_bugs": 555,
     "phan_results": {
@@ -1986,7 +1998,10 @@
       "assignOp.invalid": 1,
       "assign.propertyType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "stars": 12080,
     "github_bugs": 57,
     "phan_results": {
@@ -2060,7 +2075,7 @@
       "callable.nonCallable": 1,
       "booleanNot.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 240,
     "stars": 11197,
     "phan_results": {
@@ -2274,7 +2289,10 @@
       "varTag.variableNotFound": 1,
       "phpDoc.parseError": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm",
+      "phpstan"
+    ],
     "github_bugs": 960,
     "stars": 10815,
     "phan_results": {
@@ -2364,7 +2382,7 @@
       "argument.unpackNonIterable": 1,
       "nullCoalesce.expr": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 844,
     "stars": 10797,
     "phan_results": {
@@ -2593,7 +2611,9 @@
       "clone.nonObject": 1,
       "instanceof.alwaysFalse": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 87,
     "stars": 10700,
     "phan_results": {
@@ -2771,7 +2791,9 @@
       "encapsedStringPart.nonString": 1,
       "varTag.nativeType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 242,
     "stars": 10241,
     "phan_results": {
@@ -2965,7 +2987,9 @@
       "nullCoalesce.variable": 1,
       "argument.byRef": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 3109,
     "stars": 10042,
     "phan_results": {
@@ -3211,7 +3235,10 @@
       "smaller.alwaysFalse": 1,
       "greater.alwaysFalse": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "phan"
+    ],
     "github_bugs": 45,
     "stars": 9782,
     "phan_results": {
@@ -3441,7 +3468,7 @@
       "doWhile.alwaysFalse": 1,
       "new.noConstructor": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 54,
     "stars": 9338,
     "phan_results": {
@@ -3592,7 +3619,7 @@
       "class.extendsFinalByPhpDoc": 1,
       "callable.nonCallable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 6,
     "stars": 8836,
     "phan_results": {
@@ -3739,7 +3766,7 @@
       "property.unusedType": 1,
       "throws.unusedType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 122,
     "stars": 8864,
     "phan_results": {
@@ -3996,7 +4023,9 @@
       "property.unusedType": 1,
       "booleanAnd.alwaysFalse": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 15,
     "stars": 8522,
     "phan_results": {
@@ -4159,7 +4188,7 @@
       "expr.resultUnused": 1,
       "booleanAnd.leftAlwaysTrue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 72,
     "stars": 8044,
     "phan_results": {
@@ -4365,7 +4394,9 @@
       "isset.offset": 1,
       "postDec.type": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 141,
     "stars": 7680,
     "phan_results": {
@@ -4540,7 +4571,9 @@
       "property.notFound": 1,
       "cast.string": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 6,
     "stars": 7607,
     "phan_results": {
@@ -4678,7 +4711,10 @@
       "return.deprecatedInterface": 1,
       "class.implementsDeprecatedInterface": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "github_bugs": 7470,
     "stars": 7517,
     "phan_results": {
@@ -4870,7 +4906,9 @@
       "property.nonObject": 2,
       "return.type": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 1,
     "stars": 7458,
     "phan_results": {
@@ -4907,7 +4945,9 @@
       "function.alreadyNarrowedType": 1,
       "isset.variable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 8,
     "stars": 7039,
     "phan_results": {
@@ -5093,7 +5133,9 @@
     "phpstan_results": {
       "foreach.nonIterable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 7,
     "stars": 6767,
     "phan_results": {
@@ -5293,7 +5335,10 @@
       "if.alwaysFalse": 1,
       "function.resultUnused": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "github_bugs": 28,
     "stars": 6756,
     "phan_results": {
@@ -5321,7 +5366,7 @@
       "missingType.property": 1,
       "offsetAccess.nonOffsetAccessible": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 21,
     "stars": 6866,
     "phan_results": {
@@ -5465,7 +5510,7 @@
       "booleanAnd.leftAlwaysFalse": 1,
       "booleanAnd.rightAlwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2090,
     "stars": 6677,
     "phan_results": {
@@ -5721,7 +5766,9 @@
     "phpstan_results": {
       "foreach.nonIterable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 3,
     "stars": 6600,
     "phan_results": {
@@ -5916,7 +5963,9 @@
       "cast.int": 1,
       "method.deprecated": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 21,
     "stars": 6594,
     "phan_results": {
@@ -5990,7 +6039,9 @@
       "cast.string": 1,
       "postInc.type": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 16,
     "stars": 6566,
     "phan_results": {
@@ -6100,7 +6151,7 @@
       "offsetAccess.invalidOffset": 1,
       "binaryOp.invalid": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 30,
     "stars": 6340,
     "phan_results": {
@@ -6339,7 +6390,7 @@
       "varTag.multipleTags": 1,
       "generics.wrongParent": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 11,
     "stars": 6326,
     "phan_results": {
@@ -6713,7 +6764,9 @@
       "preDec.type": 1,
       "postDec.nonNumeric": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 4283,
     "stars": 6252,
     "phan_results": {
@@ -6987,7 +7040,9 @@
       "greater.alwaysTrue": 1,
       "offsetAssign.dimType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 289,
     "stars": 6111,
     "phan_results": {
@@ -7236,7 +7291,7 @@
       "property.nonObject": 1,
       "trait.unused": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 13,
     "stars": 6040,
     "phan_results": {
@@ -7306,7 +7361,9 @@
       "phpstanApi.constructor": 1,
       "cast.string": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 266,
     "stars": 5896,
     "phan_results": {
@@ -7428,7 +7485,9 @@
       "property.unusedType": 1,
       "function.alreadyNarrowedType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 45,
     "stars": 5773,
     "phan_results": {
@@ -7635,7 +7694,9 @@
       "nullCoalesce.variable": 1,
       "notIdentical.alwaysFalse": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 2891,
     "stars": 5672,
     "phan_results": {
@@ -7830,7 +7891,9 @@
       "property.nonObject": 1,
       "identical.alwaysTrue": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 203,
     "stars": 5579,
     "phan_results": {
@@ -7989,7 +8052,9 @@
       "booleanOr.leftAlwaysFalse": 1,
       "booleanOr.rightAlwaysFalse": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phan"
+    ],
     "github_bugs": 462,
     "stars": 5564,
     "phan_results": {
@@ -8154,7 +8219,7 @@
       "assignOp.invalid": 1,
       "parameter.notFound": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 134,
     "stars": 5580,
     "phan_results": {
@@ -8222,7 +8287,7 @@
       "missingType.property": 1,
       "staticMethod.notFound": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 87,
     "stars": 5501,
     "phan_results": {
@@ -8378,7 +8443,9 @@
       "greaterOrEqual.alwaysTrue": 1,
       "booleanAnd.rightAlwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 49,
     "stars": 5465,
     "phan_results": {
@@ -8485,7 +8552,9 @@
       "class.noParent": 1,
       "postInc.type": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 60,
     "stars": 5424,
     "phan_results": {
@@ -8685,7 +8754,9 @@
       "booleanOr.alwaysFalse": 1,
       "greater.alwaysFalse": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 33599,
     "github_bugs": 843,
     "open_bugs": 2,
@@ -8981,7 +9052,9 @@
       "cast.string": 2,
       "encapsedStringPart.nonString": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 28968,
     "github_bugs": 1172,
     "phan_results": {
@@ -9211,7 +9284,7 @@
       "varTag.misplaced": 1,
       "varTag.noVariable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 27,
     "stars": 5064,
     "phan_results": {
@@ -9438,7 +9511,9 @@
       "smallerOrEqual.alwaysFalse": 1,
       "array.duplicateKey": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "stars": 30331,
     "github_bugs": {
       "total_bugs": 8130
@@ -9675,7 +9750,9 @@
       "isset.offset": 1,
       "generics.variance": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 1241,
     "stars": 9587,
     "phan_results": {
@@ -9781,7 +9858,9 @@
       "binaryOp.invalid": 1,
       "generics.variance": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 103,
     "stars": 5337,
     "phan_results": {
@@ -9881,7 +9960,9 @@
       "property.onlyWritten": 1,
       "instanceof.alwaysTrue": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 76,
     "stars": 5184,
     "phan_results": {
@@ -9996,7 +10077,9 @@
       "identical.alwaysTrue": 1,
       "deadCode.unreachable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 84,
     "stars": 4969,
     "phan_results": {
@@ -10064,7 +10147,7 @@
       "constructor.unusedParameter": 1,
       "ternary.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 40,
     "stars": 4930,
     "phan_results": {
@@ -10227,7 +10310,7 @@
       "return.never": 1,
       "booleanOr.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 372,
     "stars": 4924,
     "phan_results": {
@@ -10540,7 +10623,10 @@
       "method.private": 1,
       "function.inner": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "phan"
+    ],
     "github_bugs": 1178,
     "stars": 4915,
     "phan_results": {
@@ -10770,7 +10856,7 @@
       "function.alreadyNarrowedType": 1,
       "return.phpDocType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 23,
     "stars": 4873,
     "phan_results": {
@@ -10875,7 +10961,9 @@
       "method.notFound": 1,
       "missingType.generics": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 51,
     "stars": 4812,
     "phan_results": {
@@ -11003,7 +11091,9 @@
       "identical.alwaysTrue": 1,
       "callable.nonCallable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 197,
     "stars": 4807,
     "phan_results": {
@@ -11195,7 +11285,9 @@
       "postInc.type": 1,
       "cast.int": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 68,
     "stars": 4769,
     "phan_results": {
@@ -11335,7 +11427,7 @@
       "ternary.alwaysFalse": 1,
       "return.missing": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 10,
     "stars": 4727,
     "phan_results": {
@@ -11550,7 +11642,9 @@
       "preDec.type": 1,
       "parameter.unresolvableType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 2233,
     "stars": 4754
   },
@@ -11582,7 +11676,9 @@
       "arrayUnpacking.nonIterable": 1,
       "missingType.generics": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 40,
     "stars": 4662,
     "phan_results": {
@@ -11668,7 +11764,7 @@
       "notIdentical.alwaysTrue": 1,
       "closure.unusedUse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 33,
     "stars": 4529,
     "phan_results": {
@@ -11814,7 +11910,9 @@
       "nullCoalesce.expr": 1,
       "cast.double": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 175,
     "stars": 4482,
     "phan_results": {
@@ -11954,7 +12052,7 @@
       "greaterOrEqual.alwaysTrue": 1,
       "missingType.parameter": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 15,
     "stars": 4430,
     "phan_results": {
@@ -12085,7 +12183,7 @@
       "function.alreadyNarrowedType": 1,
       "booleanAnd.leftAlwaysTrue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 42,
     "stars": 4311,
     "phan_results": {
@@ -12153,7 +12251,9 @@
       "variable.undefined": 1,
       "nullsafe.neverNull": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 22,
     "stars": 4302,
     "phan_results": {
@@ -12317,7 +12417,7 @@
       "unset.variable": 1,
       "function.inner": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 306,
     "stars": 4299,
     "phan_results": {
@@ -12576,7 +12676,9 @@
       "return.type": 2,
       "method.notFound": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 12,
     "stars": 4252,
     "phan_results": {
@@ -12657,7 +12759,7 @@
       "assignOp.invalid": 1,
       "offsetAccess.nonOffsetAccessible": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 8,
     "stars": 4213,
     "phan_results": {
@@ -12805,7 +12907,9 @@
       "property.phpDocType": 1,
       "notIdentical.alwaysTrue": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 90,
     "stars": 4205,
     "phan_results": {
@@ -13016,7 +13120,7 @@
       "greater.alwaysFalse": 1,
       "staticMethod.notFound": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 744,
     "stars": 4154,
     "phan_results": {
@@ -13151,7 +13255,9 @@
       "trait.unused": 1,
       "identical.alwaysTrue": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 855,
     "stars": 4151,
     "phan_results": {
@@ -13322,7 +13428,7 @@
       "parameter.phpDocType": 1,
       "postInc.type": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 184,
     "stars": 4112,
     "phan_results": {
@@ -13501,7 +13607,9 @@
       "smaller.alwaysFalse": 1,
       "property.onlyWritten": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 105,
     "stars": 4077,
     "phan_results": {
@@ -13593,7 +13701,7 @@
       "missingType.return": 1,
       "property.notFound": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 5,
     "stars": 4011,
     "phan_results": {
@@ -13757,7 +13865,9 @@
       "arguments.count": 1,
       "booleanOr.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 160,
     "stars": 3972,
     "phan_results": {
@@ -13898,7 +14008,7 @@
       "missingType.return": 1,
       "echo.nonString": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 88,
     "stars": 3968,
     "phan_results": {
@@ -14030,7 +14140,9 @@
       "class.notFound": 1,
       "offsetAccess.nonArray": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 95,
     "stars": 3933,
     "phan_results": {
@@ -14194,7 +14306,7 @@
       "if.alwaysTrue": 1,
       "callable.nonCallable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 30,
     "stars": 3872,
     "phan_results": {
@@ -14321,7 +14433,7 @@
       "clone.nonObject": 1,
       "booleanAnd.rightAlwaysTrue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 210,
     "stars": 3888,
     "phan_results": {
@@ -14469,7 +14581,9 @@
       "offsetAccess.notFound": 1,
       "argument.vsprintf": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 63,
     "stars": 3861,
     "psalm_results": {
@@ -14565,7 +14679,9 @@
       "require.fileNotFound": 1,
       "assign.propertyType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 16,
     "stars": 3832,
     "phan_results": {
@@ -14628,7 +14744,7 @@
       "staticProperty.nonStaticAccess": 1,
       "deadCode.unreachable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 55,
     "stars": 3829,
     "phan_results": {
@@ -14742,7 +14858,9 @@
       "offsetAccess.nonArray": 1,
       "callable.nonCallable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 291,
     "stars": 3852,
     "phan_results": {
@@ -14913,7 +15031,9 @@
       "arrayValues.list": 1,
       "parameter.unresolvableType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 543,
     "stars": 3769,
     "phan_results": {
@@ -15100,7 +15220,7 @@
       "class.notFound": 1,
       "throws.notThrowable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 5,
     "stars": 3724,
     "phan_results": {
@@ -15203,7 +15323,7 @@
       "postInc.type": 1,
       "arguments.count": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 122,
     "stars": 3682,
     "phan_results": {
@@ -15348,7 +15468,7 @@
       "parameter.phpDocType": 1,
       "whitespace.fileEnd": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 629,
     "stars": 3697,
     "phan_results": {
@@ -15615,7 +15735,7 @@
       "parameter.notFound": 1,
       "elseif.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 134,
     "stars": 3612,
     "phan_results": {
@@ -15855,7 +15975,7 @@
       "cast.int": 1,
       "arguments.count": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 158,
     "stars": 3593,
     "phan_results": {
@@ -15956,7 +16076,7 @@
       "function.alreadyNarrowedType": 1,
       "identical.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 3,
     "stars": 3513,
     "phan_results": {
@@ -16028,7 +16148,7 @@
       "identical.alwaysFalse": 1,
       "trait.unused": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 26,
     "stars": 3463,
     "phan_results": {
@@ -16122,7 +16242,10 @@
       "function.alreadyNarrowedType": 2,
       "binaryOp.invalid": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "github_bugs": 6,
     "stars": 3538,
     "phan_results": {
@@ -16315,7 +16438,7 @@
       "arrayValues.list": 1,
       "varTag.differentVariable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 391,
     "stars": 3431,
     "phan_results": {
@@ -16700,7 +16823,9 @@
       "preDec.type": 1,
       "empty.variable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 90,
     "stars": 3387,
     "phan_results": {
@@ -16860,7 +16985,9 @@
       "property.unusedType": 1,
       "property.onlyWritten": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 820,
     "stars": 3383,
     "phan_results": {
@@ -17055,7 +17182,7 @@
       "preDec.type": 1,
       "throws.unusedType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 9,
     "stars": 3333,
     "phan_results": {
@@ -17166,7 +17293,7 @@
       "parameter.phpDocType": 1,
       "assignOp.invalid": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 18,
     "stars": 3333,
     "phan_results": {
@@ -17301,7 +17428,7 @@
       "nullCoalesce.variable": 1,
       "arrayFilter.same": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 258,
     "stars": 3332,
     "phan_results": {
@@ -17477,7 +17604,7 @@
       "equal.alwaysFalse": 1,
       "postInc.type": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 8,
     "stars": 3308,
     "phan_results": {
@@ -17580,7 +17707,7 @@
       "foreach.nonIterable": 1,
       "parameter.notFound": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 57,
     "stars": 3302,
     "phan_results": {
@@ -17649,7 +17776,7 @@
       "arguments.count": 1,
       "class.nameCase": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 3301,
     "phan_results": {
@@ -17837,7 +17964,7 @@
       "assignOp.invalid": 1,
       "array.duplicateKey": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 430,
     "stars": 3300,
     "phan_results": {
@@ -18060,7 +18187,9 @@
       "assignOp.invalid": 1,
       "method.notFound": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 204,
     "stars": 3256,
     "phan_results": {
@@ -18135,7 +18264,9 @@
       "argument.type": 1,
       "assignOp.invalid": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 8,
     "stars": 3214,
     "phan_results": {
@@ -18201,7 +18332,7 @@
       "return.empty": 1,
       "trait.unused": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 10,
     "stars": 3218,
     "phan_results": {
@@ -18271,7 +18402,9 @@
       "varTag.nativeType": 1,
       "function.alreadyNarrowedType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 69,
     "stars": 3188,
     "phan_results": {
@@ -18364,7 +18497,7 @@
       "cast.string": 1,
       "trait.unused": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 43,
     "stars": 3135,
     "phan_results": {
@@ -18595,7 +18728,9 @@
       "unset.offset": 1,
       "instanceof.alwaysFalse": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 12,
     "stars": 3072,
     "psalm_results": {
@@ -18807,7 +18942,9 @@
       "generics.lessTypes": 1,
       "varTag.differentVariable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 300,
     "stars": 3062,
     "phan_results": {
@@ -19042,7 +19179,9 @@
       "class.noParent": 1,
       "encapsedStringPart.nonString": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 2,
     "stars": 2995,
     "phan_results": {
@@ -19077,7 +19216,9 @@
       "cast.string": 1,
       "notIdentical.alwaysTrue": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 1,
     "stars": 2951,
     "phan_results": {
@@ -19117,7 +19258,9 @@
       "assignOp.invalid": 1,
       "cast.string": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 77,
     "stars": 2928,
     "phan_results": {
@@ -19193,7 +19336,7 @@
       "booleanAnd.alwaysFalse": 1,
       "identical.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 3,
     "stars": 2916,
     "phan_results": {
@@ -19299,7 +19442,7 @@
       "echo.nonString": 1,
       "variable.undefined": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 13,
     "stars": 2911,
     "phan_results": {
@@ -19427,7 +19570,7 @@
       "method.unused": 1,
       "method.resultUnused": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 9,
     "stars": 2910,
     "phan_results": {
@@ -19573,7 +19716,7 @@
       "deadCode.unreachable": 1,
       "cast.double": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 177,
     "stars": 2916,
     "phan_results": {
@@ -19727,7 +19870,7 @@
       "method.childReturnType": 1,
       "staticMethod.void": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 5,
     "stars": 2873,
     "phan_results": {
@@ -19852,7 +19995,7 @@
       "method.void": 1,
       "offsetAccess.nonArray": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 2855,
     "phan_results": {
@@ -19895,7 +20038,10 @@
       "method.nonObject": 3,
       "assign.readOnlyPropertyByPhpDoc": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "github_bugs": 59,
     "stars": 2837,
     "phan_results": {
@@ -19945,7 +20091,9 @@
       "property.notFound": 1,
       "argument.templateType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 14,
     "stars": 2812,
     "phan_results": {
@@ -20042,7 +20190,7 @@
       "varTag.misplaced": 1,
       "varTag.noVariable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 50,
     "stars": 2796,
     "phan_results": {
@@ -20225,7 +20373,7 @@
       "new.noConstructor": 1,
       "smaller.alwaysTrue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 2763,
     "phan_results": {
@@ -20426,7 +20574,7 @@
       "staticMethod.nonObject": 1,
       "equal.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 59,
     "stars": 2762,
     "phan_results": {
@@ -20618,7 +20766,10 @@
       "instanceof.alwaysFalse": 1,
       "property.unusedType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "github_bugs": 78,
     "stars": 2747,
     "phan_results": {
@@ -20752,7 +20903,7 @@
       "offsetAssign.dimType": 1,
       "throws.unusedType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 19,
     "stars": 2692,
     "phan_results": {
@@ -20949,7 +21100,9 @@
       "parameter.notFound": 1,
       "unaryOp.invalid": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 100,
     "stars": 2710,
     "phan_results": {
@@ -21085,7 +21238,7 @@
       "cast.double": 1,
       "encapsedStringPart.nonString": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 19,
     "stars": 2669,
     "phan_results": {
@@ -21196,7 +21349,7 @@
       "cast.int": 1,
       "binaryOp.invalid": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 14,
     "stars": 2662,
     "phan_results": {
@@ -21289,7 +21442,7 @@
       "booleanOr.alwaysTrue": 1,
       "identical.alwaysTrue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 37,
     "stars": 2643,
     "phan_results": {
@@ -21447,7 +21600,7 @@
       "booleanAnd.leftAlwaysTrue": 1,
       "trait.unused": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 52,
     "stars": 2584,
     "phan_results": {
@@ -21637,7 +21790,7 @@
       "function.resultUnused": 1,
       "property.phpDocType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 133,
     "stars": 2557,
     "phan_results": {
@@ -21884,7 +22037,7 @@
       "whitespace.fileEnd": 1,
       "cast.double": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 72,
     "stars": 2526,
     "phan_results": {
@@ -21967,7 +22120,9 @@
       "preInc.type": 1,
       "preDec.type": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 201,
     "stars": 2518,
     "phan_results": {
@@ -22105,7 +22260,10 @@
       "if.alwaysTrue": 1,
       "unset.possiblyHookedProperty": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "github_bugs": 11,
     "stars": 2470,
     "phan_results": {
@@ -22233,7 +22391,7 @@
       "encapsedStringPart.nonString": 1,
       "method.nonObject": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 9,
     "stars": 2442,
     "phan_results": {
@@ -22286,7 +22444,9 @@
       "equal.alwaysTrue": 1,
       "if.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 5,
     "stars": 2422,
     "phan_results": {
@@ -22370,7 +22530,9 @@
       "match.unhandled": 1,
       "cast.string": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 141,
     "stars": 2365,
     "phan_results": {
@@ -22460,7 +22622,9 @@
       "foreach.nonIterable": 1,
       "isset.offset": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 4,
     "stars": 2367,
     "phan_results": {
@@ -22616,7 +22780,9 @@
       "varTag.unresolvableType": 1,
       "identical.alwaysTrue": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 182,
     "stars": 2362,
     "phan_results": {
@@ -22854,7 +23020,9 @@
       "ternary.alwaysTrue": 1,
       "paramOut.type": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 36,
     "stars": 2337,
     "phan_results": {
@@ -23010,7 +23178,9 @@
       "encapsedStringPart.nonString": 1,
       "method.nonObject": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 85,
     "stars": 2340,
     "phan_results": {
@@ -23405,7 +23575,7 @@
       "booleanAnd.alwaysFalse": 1,
       "parameter.notFound": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 35,
     "stars": 2339,
     "phan_results": {
@@ -23466,7 +23636,7 @@
       "booleanAnd.leftAlwaysTrue": 1,
       "parameter.implicitlyNullable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 9,
     "stars": 2318,
     "phan_results": {
@@ -23585,7 +23755,7 @@
       "smaller.alwaysFalse": 1,
       "callable.nonCallable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 9,
     "stars": 2265,
     "phan_results": {
@@ -23655,7 +23825,9 @@
       "return.unresolvableType": 1,
       "varTag.nativeType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 118,
     "stars": 2315,
     "phan_results": {
@@ -23811,7 +23983,7 @@
       "booleanOr.alwaysTrue": 1,
       "notIdentical.alwaysTrue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 76,
     "stars": 2233,
     "phan_results": {
@@ -23874,7 +24046,7 @@
       "instanceof.alwaysFalse": 1,
       "cast.string": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 4,
     "stars": 2235,
     "phan_results": {
@@ -23969,7 +24141,7 @@
       "function.alreadyNarrowedType": 1,
       "cast.string": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 7,
     "stars": 2194,
     "phan_results": {
@@ -24049,7 +24221,9 @@
       "property.notFound": 1,
       "new.static": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 92,
     "stars": 2165,
     "phan_results": {
@@ -24236,7 +24410,9 @@
       "property.protected": 1,
       "varTag.nativeType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 573,
     "stars": 2196,
     "phan_results": {
@@ -24525,7 +24701,9 @@
       "argument.unpackNonIterable": 1,
       "cast.string": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 7,
     "stars": 2155,
     "phan_results": {
@@ -24634,7 +24812,7 @@
       "missingType.generics": 1,
       "nullCoalesce.variable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 10,
     "stars": 2138,
     "phan_results": {
@@ -24716,7 +24894,7 @@
       "phpDoc.parseError": 1,
       "encapsedStringPart.nonString": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 52,
     "stars": 2122,
     "phan_results": {
@@ -24828,7 +25006,9 @@
       "echo.nonString": 1,
       "identical.alwaysTrue": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 508,
     "stars": 2113,
     "phan_results": {
@@ -25044,7 +25224,10 @@
       "class.extendsFinalByPhpDoc": 1,
       "constructor.missingParentCall": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm",
+      "phpstan"
+    ],
     "github_bugs": 217,
     "stars": 2091,
     "phan_results": {
@@ -25203,7 +25386,9 @@
       "function.alreadyNarrowedType": 1,
       "missingType.generics": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 19,
     "stars": 2019,
     "phan_results": {
@@ -25244,7 +25429,7 @@
       "missingType.iterableValue": 1,
       "trait.unused": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 2008,
     "phan_results": {
@@ -25291,7 +25476,9 @@
       "offsetAssign.dimType": 1,
       "cast.string": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 296,
     "stars": 1995,
     "phan_results": {
@@ -25442,7 +25629,7 @@
       "missingType.parameter": 2,
       "method.void": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 51,
     "stars": 1970,
     "phan_results": {
@@ -25486,7 +25673,7 @@
       "assign.propertyType": 1,
       "missingType.parameter": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 58,
     "stars": 1956,
     "phan_results": {
@@ -25560,7 +25747,7 @@
       "clone.nonObject": 1,
       "preDec.type": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 11,
     "stars": 1950,
     "phan_results": {
@@ -25672,7 +25859,7 @@
       "return.empty": 1,
       "property.onlyWritten": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 118,
     "stars": 1938,
     "phan_results": {
@@ -25847,7 +26034,7 @@
       "postInc.type": 1,
       "booleanAnd.leftAlwaysTrue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 11,
     "stars": 1923,
     "phan_results": {
@@ -25941,7 +26128,9 @@
       "return.type": 3,
       "foreach.nonIterable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 27,
     "stars": 1908,
     "phan_results": {
@@ -26050,7 +26239,9 @@
       "identical.alwaysTrue": 1,
       "phpDoc.parseError": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 107,
     "stars": 1895,
     "psalm_results": {
@@ -26236,7 +26427,9 @@
       "return.void": 1,
       "varTag.nativeType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 95,
     "stars": 1892,
     "phan_results": {
@@ -26377,7 +26570,9 @@
       "offsetAccess.nonArray": 1,
       "property.notFound": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 69,
     "stars": 1882,
     "phan_results": {
@@ -26498,7 +26693,10 @@
       "deadCode.unreachable": 1,
       "booleanOr.alwaysTrue": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "github_bugs": 152,
     "stars": 1886,
     "phan_results": {
@@ -26637,7 +26835,9 @@
       "property.readOnlyByPhpDocDefaultValue": 1,
       "smallerOrEqual.alwaysTrue": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 36,
     "stars": 1879,
     "phan_results": {
@@ -26776,7 +26976,7 @@
       "isset.variable": 1,
       "doWhile.alwaysTrue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 5,
     "stars": 2337,
     "phan_results": {
@@ -27064,7 +27264,7 @@
       "if.alwaysTrue": 1,
       "return.void": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 189,
     "stars": 2391,
     "phan_results": {
@@ -27257,7 +27457,7 @@
       "property.notFound": 1,
       "property.phpDocType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 17,
     "stars": 1810,
     "phan_results": {
@@ -27328,7 +27528,10 @@
       "function.alreadyNarrowedType": 1,
       "instanceof.alwaysTrue": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "github_bugs": 40,
     "stars": 1812,
     "phan_results": {
@@ -27363,7 +27566,7 @@
       "argument.unpackNonIterable": 1,
       "function.alreadyNarrowedType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 16,
     "stars": 1809,
     "phan_results": {
@@ -27503,7 +27706,9 @@
       "arrayValues.list": 1,
       "throws.unusedType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 695,
     "stars": 1802,
     "phan_results": {
@@ -27702,7 +27907,9 @@
       "binaryOp.invalid": 1,
       "notIdentical.alwaysTrue": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 22,
     "stars": 1799,
     "phan_results": {
@@ -27763,7 +27970,9 @@
       "ternary.condNotBoolean": 1,
       "booleanAnd.rightNotBoolean": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 17,
     "stars": 1793,
     "phan_results": {
@@ -27866,7 +28075,9 @@
       "varTag.nativeType": 1,
       "method.templateTypeNotInParameter": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 40,
     "stars": 1779,
     "phan_results": {
@@ -28116,7 +28327,7 @@
       "greater.invalid": 1,
       "varTag.nativeType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2189,
     "stars": 1746,
     "phan_results": {
@@ -28425,7 +28636,7 @@
       "property.unused": 1,
       "missingType.generics": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 7,
     "stars": 1739,
     "phan_results": {
@@ -28527,7 +28738,9 @@
       "cast.string": 1,
       "notIdentical.alwaysTrue": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 70,
     "stars": 1665,
     "phan_results": {
@@ -28644,7 +28857,9 @@
     "phpstan_results": {
       "return.type": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 2,
     "stars": 1582,
     "phan_results": {
@@ -28693,7 +28908,9 @@
       "echo.nonString": 1,
       "nullCoalesce.offset": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 139,
     "stars": 1548,
     "phan_results": {
@@ -28822,7 +29039,9 @@
       "if.alwaysTrue": 1,
       "if.alwaysFalse": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 15,
     "stars": 1467
   },
@@ -28869,7 +29088,7 @@
       "greater.alwaysTrue": 1,
       "function.alreadyNarrowedType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 27,
     "stars": 1727,
     "psalm_results": {
@@ -29031,7 +29250,9 @@
       "greaterOrEqual.alwaysTrue": 1,
       "booleanOr.rightAlwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 420,
     "stars": 1722,
     "phan_results": {
@@ -29316,7 +29537,7 @@
       "notIdentical.alwaysFalse": 1,
       "clone.nonObject": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2097,
     "stars": 1717,
     "phan_results": {
@@ -29663,7 +29884,7 @@
       "function.alreadyNarrowedType": 1,
       "whitespace.fileEnd": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 32,
     "stars": 1713,
     "phan_results": {
@@ -29794,7 +30015,7 @@
       "trait.unused": 1,
       "instanceof.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 222,
     "stars": 1716,
     "phan_results": {
@@ -29881,7 +30102,7 @@
       "function.notFound": 1,
       "argument.type": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 16,
     "stars": 1693,
     "phan_results": {
@@ -29990,7 +30211,9 @@
       "ternary.resultUnused": 1,
       "notEqual.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 26,
     "stars": 1673,
     "phan_results": {
@@ -30274,7 +30497,7 @@
       "greater.alwaysTrue": 1,
       "constructor.unusedParameter": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 457,
     "stars": 1653,
     "phan_results": {
@@ -30572,7 +30795,7 @@
       "assignOp.invalid": 1,
       "missingType.generics": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 19,
     "stars": 1651,
     "phan_results": {
@@ -30707,7 +30930,7 @@
       "arguments.count": 1,
       "binaryOp.invalid": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 19,
     "stars": 1611,
     "phan_results": {
@@ -30798,7 +31021,9 @@
       "staticProperty.nonObject": 1,
       "offsetAccess.notFound": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 43,
     "stars": 1622,
     "phan_results": {
@@ -30973,7 +31198,7 @@
       "binaryOp.invalid": 1,
       "method.nonObject": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 8,
     "stars": 1590,
     "phan_results": {
@@ -31045,7 +31270,7 @@
       "smaller.alwaysFalse": 1,
       "parameter.notFound": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 20,
     "stars": 1599,
     "phan_results": {
@@ -31126,7 +31351,7 @@
       "booleanAnd.leftAlwaysTrue": 1,
       "identical.alwaysTrue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 91,
     "stars": 1562,
     "phan_results": {
@@ -31290,7 +31515,7 @@
       "missingType.generics": 1,
       "assignOp.invalid": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 13,
     "stars": 1528,
     "phan_results": {
@@ -31380,7 +31605,7 @@
       "property.defaultValue": 1,
       "offsetAssign.valueType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 107,
     "stars": 1523,
     "phan_results": {
@@ -31517,7 +31742,7 @@
       "booleanAnd.rightAlwaysTrue": 1,
       "isset.offset": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 24,
     "stars": 1528,
     "phan_results": {
@@ -31622,7 +31847,7 @@
       "missingType.property": 1,
       "return.type": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 23,
     "stars": 1491
   },
@@ -31657,7 +31882,7 @@
       "echo.nonString": 1,
       "smaller.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 356,
     "stars": 1486
   },
@@ -31700,7 +31925,7 @@
       "property.notFound": 1,
       "isset.variable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 188,
     "stars": 1469
   },
@@ -31736,7 +31961,9 @@
       "clone.nonObject": 1,
       "offsetAccess.notFound": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 13633,
     "github_bugs": 42,
     "phan_results": {
@@ -31962,7 +32189,9 @@
       "if.alwaysFalse": 1,
       "smaller.alwaysTrue": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 13443,
     "github_bugs": 5,
     "phan_results": {
@@ -32102,7 +32331,7 @@
       "foreach.nonIterable": 1,
       "echo.nonString": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 12966,
     "github_bugs": 87,
     "phan_results": {
@@ -32159,7 +32388,9 @@
       "offsetAccess.notFound": 2,
       "offsetAssign.valueType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 12469,
     "github_bugs": 20,
     "phan_results": {
@@ -32279,7 +32510,9 @@
       "identical.alwaysTrue": 1,
       "arrayUnpacking.nonIterable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 11353,
     "github_bugs": 12,
     "phan_results": {
@@ -32481,7 +32714,7 @@
       "booleanOr.alwaysFalse": 1,
       "identical.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 3,
     "stars": 11172,
     "phan_results": {
@@ -32609,7 +32842,9 @@
       "parameterByRef.unusedType": 1,
       "parameterByRef.type": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 246,
     "stars": 10808,
     "phan_results": {
@@ -32744,7 +32979,9 @@
       "assign.propertyType": 4,
       "cast.string": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 9,
     "stars": 10319,
     "phan_results": {
@@ -32822,7 +33059,10 @@
     "phpstan_results": {
       "property.readOnlyByPhpDocDefaultValue": 2
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "github_bugs": 1,
     "stars": 9065,
     "phan_results": {
@@ -32887,7 +33127,9 @@
       "method.impossibleType": 1,
       "argument.templateType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 1,
     "stars": 8727,
     "phan_results": {
@@ -33134,7 +33376,7 @@
       "offsetAccess.invalidOffset": 1,
       "notEqual.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 5,
     "stars": 8350,
     "phan_results": {
@@ -33351,7 +33593,9 @@
       "booleanOr.leftAlwaysFalse": 1,
       "booleanOr.rightAlwaysFalse": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 9,
     "stars": 8279,
     "phan_results": {
@@ -33524,7 +33768,7 @@
       "method.nonObject": 2,
       "cast.int": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 22,
     "stars": 7892,
     "phan_results": {
@@ -33585,7 +33829,7 @@
       "return.type": 1,
       "missingType.parameter": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 7,
     "stars": 7874,
     "phan_results": {
@@ -33617,7 +33861,9 @@
     "phpstan_results": {
       "foreach.nonIterable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 2,
     "stars": 7703,
     "phan_results": {
@@ -33804,7 +34050,9 @@
       "greaterOrEqual.invalid": 1,
       "assign.propertyType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 1,
     "stars": 7622,
     "phan_results": {
@@ -33987,7 +34235,7 @@
     "phpstan_results": {
       "missingType.iterableValue": 20
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 6,
     "stars": 7626,
     "phan_results": {
@@ -34006,7 +34254,9 @@
       "foreach.nonIterable": 1,
       "nullCoalesce.expr": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 2,
     "stars": 7447,
     "phan_results": {
@@ -34039,7 +34289,9 @@
       "assignOp.invalid": 1,
       "binaryOp.invalid": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 5,
     "stars": 7383,
     "phan_results": {
@@ -34058,7 +34310,9 @@
       "argument.type": 10,
       "return.type": 2
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 37,
     "stars": 7379,
     "phan_results": {
@@ -34112,7 +34366,7 @@
       "parameter.implicitlyNullable": 1,
       "instanceof.alwaysTrue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 3,
     "stars": 6973,
     "phan_results": {
@@ -34184,7 +34438,9 @@
     "phpstan_results": {
       "foreach.nonIterable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 3,
     "stars": 6817,
     "phan_results": {
@@ -34365,7 +34621,9 @@
       "foreach.nonIterable": 1,
       "function.alreadyNarrowedType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 3,
     "stars": 6571,
     "phan_results": {
@@ -34579,7 +34837,7 @@
       "arguments.count": 1,
       "instanceof.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 6,
     "stars": 6143,
     "phan_results": {
@@ -34709,7 +34967,7 @@
       "cast.string": 1,
       "method.nonObject": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 6046,
     "phan_results": {
@@ -34760,7 +35018,9 @@
       "parameter.notFound": 1,
       "cast.string": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 9,
     "stars": 5667,
     "phan_results": {
@@ -34856,7 +35116,7 @@
       "isset.property": 1,
       "logicalAnd.alwaysTrue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 10,
     "stars": 5637,
     "phan_results": {
@@ -34949,7 +35209,7 @@
       "cast.string": 1,
       "assignOp.invalid": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 5360,
     "phan_results": {
@@ -35005,7 +35265,9 @@
       "method.notFound": 1,
       "class.notFound": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 19,
     "stars": 5342,
     "phan_results": {
@@ -35187,7 +35449,9 @@
       "booleanOr.alwaysTrue": 1,
       "varTag.noVariable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 503,
     "stars": 5339,
     "phan_results": {
@@ -35427,7 +35691,7 @@
       "identical.alwaysFalse": 1,
       "missingType.iterableValue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 5190,
     "phan_results": {
@@ -35468,7 +35732,9 @@
       "argument.unpackNonIterable": 1,
       "missingType.parameter": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 1,
     "stars": 5150,
     "psalm_results": {
@@ -35558,7 +35824,9 @@
       "postInc.type": 1,
       "encapsedStringPart.nonString": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 41,
     "stars": 5008,
     "phan_results": {
@@ -35700,7 +35968,7 @@
       "booleanOr.alwaysTrue": 1,
       "cast.string": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 14,
     "stars": 4890,
     "phan_results": {
@@ -35780,7 +36048,9 @@
       "booleanNot.exprNotBoolean": 1,
       "booleanAnd.leftNotBoolean": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 17,
     "stars": 4857,
     "phan_results": {
@@ -35871,7 +36141,9 @@
       "assign.propertyType": 1,
       "instanceof.alwaysTrue": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 4,
     "stars": 4591,
     "phan_results": {
@@ -35950,7 +36222,7 @@
       "return.type": 2,
       "identical.alwaysTrue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 25,
     "stars": 4586,
     "phan_results": {
@@ -36000,7 +36272,9 @@
       "method.nonObject": 1,
       "missingType.return": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 4,
     "stars": 4376,
     "phan_results": {
@@ -36082,7 +36356,7 @@
       "cast.string": 1,
       "phpDoc.parseError": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 4378,
     "phan_results": {
@@ -36224,7 +36498,7 @@
       "function.alreadyNarrowedType": 1,
       "parameter.implicitlyNullable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 4,
     "stars": 4343,
     "phan_results": {
@@ -36281,7 +36555,7 @@
       "return.empty": 1,
       "booleanAnd.leftAlwaysTrue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 4,
     "stars": 4228,
     "phan_results": {
@@ -36421,7 +36695,7 @@
       "method.protected": 1,
       "property.onlyWritten": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 16,
     "stars": 4206,
     "phan_results": {
@@ -36552,7 +36826,9 @@
       "throw.notThrowable": 1,
       "cast.string": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 12,
     "stars": 4210,
     "phan_results": {
@@ -36662,7 +36938,7 @@
       "offsetAccess.invalidOffset": 1,
       "booleanAnd.leftAlwaysTrue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 9,
     "stars": 4042,
     "phan_results": {
@@ -36795,7 +37071,9 @@
       "arrayUnpacking.nonIterable": 1,
       "missingType.return": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 30,
     "stars": 4031,
     "phan_results": {
@@ -36916,7 +37194,9 @@
       "cast.string": 1,
       "method.notFound": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 4,
     "stars": 3956,
     "phan_results": {
@@ -37015,7 +37295,9 @@
       "if.alwaysTrue": 1,
       "staticMethod.notFound": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 57,
     "stars": 3954,
     "phan_results": {
@@ -37171,7 +37453,7 @@
       "nullCoalesce.expr": 1,
       "function.alreadyNarrowedType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 16,
     "stars": 3925,
     "phan_results": {
@@ -37242,7 +37524,9 @@
       "function.impossibleType": 1,
       "booleanNot.alwaysFalse": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 38,
     "stars": 3876,
     "phan_results": {
@@ -37415,7 +37699,7 @@
       "generics.lessTypes": 1,
       "generics.notSubtype": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 3832,
     "phan_results": {
@@ -37584,7 +37868,7 @@
       "arguments.count": 1,
       "empty.variable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 3774,
     "phan_results": {
@@ -37752,7 +38036,7 @@
       "ternary.alwaysFalse": 1,
       "varTag.variableNotFound": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 3728,
     "phan_results": {
@@ -37868,7 +38152,7 @@
       "variable.undefined": 1,
       "offsetAssign.dimType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 18,
     "stars": 3509,
     "phan_results": {
@@ -38007,7 +38291,9 @@
       "generics.wrongParent": 1,
       "property.defaultValue": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 20,
     "stars": 3339,
     "phan_results": {
@@ -38109,7 +38395,9 @@
       "paramOut.unusedType": 1,
       "paramOut.type": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 3,
     "stars": 3304,
     "phan_results": {
@@ -38153,7 +38441,9 @@
       "logicalAnd.resultUnused": 1,
       "variable.undefined": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 34,
     "stars": 3283,
     "phan_results": {
@@ -38250,7 +38540,7 @@
       "parameter.defaultValue": 1,
       "offsetAccess.nonArray": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 5,
     "stars": 3251,
     "phan_results": {
@@ -38378,7 +38668,9 @@
       "return.missing": 1,
       "missingType.generics": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 1,
     "stars": 3230,
     "phan_results": {
@@ -38461,7 +38753,9 @@
     "phpstan_results": {
       "possiblyImpure.methodCall": 3
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 29,
     "stars": 3204,
     "phan_results": {
@@ -38484,7 +38778,9 @@
       "offsetAccess.nonOffsetAccessible": 3,
       "missingType.iterableValue": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 31,
     "stars": 3205,
     "phan_results": {
@@ -38553,7 +38849,7 @@
       "property.defaultValue": 1,
       "offsetAccess.notFound": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 11,
     "stars": 3170,
     "phan_results": {
@@ -38644,7 +38940,7 @@
       "new.static": 1,
       "cast.double": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 18,
     "stars": 3162,
     "phan_results": {
@@ -38803,7 +39099,7 @@
       "parameter.implicitlyNullable": 1,
       "method.notFound": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 3159,
     "phan_results": {
@@ -38920,7 +39216,7 @@
       "varTag.noVariable": 1,
       "variable.undefined": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 3,
     "stars": 3051,
     "phan_results": {
@@ -39001,7 +39297,7 @@
       "foreach.nonIterable": 1,
       "new.static": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 2896,
     "phan_results": {
@@ -39059,7 +39355,9 @@
       "offsetAccess.nonOffsetAccessible": 1,
       "argument.templateType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 8,
     "stars": 2904,
     "phan_results": {
@@ -39126,7 +39424,7 @@
       "function.alreadyNarrowedType": 1,
       "trait.unused": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 2891,
     "phan_results": {
@@ -39195,7 +39493,7 @@
       "phpDoc.parseError": 1,
       "isset.variable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 17,
     "stars": 2882,
     "phan_results": {
@@ -39249,7 +39547,7 @@
       "foreach.nonIterable": 1,
       "offsetAccess.nonOffsetAccessible": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 9,
     "stars": 2872,
     "phan_results": {
@@ -39309,7 +39607,9 @@
       "parameter.trait": 1,
       "property.phpDocType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 4,
     "stars": 2841,
     "phan_results": {
@@ -39403,7 +39703,7 @@
       "property.notFound": 1,
       "method.nonObject": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 14,
     "stars": 2826,
     "phan_results": {
@@ -39505,7 +39805,9 @@
       "parameter.notFound": 1,
       "staticMethod.alreadyNarrowedType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 22,
     "stars": 2802,
     "phan_results": {
@@ -39572,7 +39874,9 @@
       "return.type": 2,
       "foreach.nonIterable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 2,
     "stars": 2768,
     "phan_results": {
@@ -39639,7 +39943,9 @@
       "missingType.iterableValue": 1,
       "missingType.return": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 3,
     "stars": 2730,
     "phan_results": {
@@ -39674,7 +39980,7 @@
       "assignOp.invalid": 1,
       "cast.string": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 3,
     "stars": 2713,
     "phan_results": {
@@ -39745,7 +40051,9 @@
       "parameterByRef.type": 1,
       "foreach.nonIterable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 13,
     "stars": 2720,
     "phan_results": {
@@ -39877,7 +40185,7 @@
       "encapsedStringPart.nonString": 1,
       "assignOp.invalid": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 2679,
     "phan_results": {
@@ -40017,7 +40325,9 @@
       "method.nonObject": 1,
       "foreach.nonIterable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 8,
     "stars": 2665,
     "phan_results": {
@@ -40160,7 +40470,7 @@
       "new.static": 1,
       "offsetAccess.notFound": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 28,
     "stars": 2659,
     "phan_results": {
@@ -40323,7 +40633,7 @@
       "cast.string": 1,
       "assignOp.invalid": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 3,
     "stars": 2616,
     "phan_results": {
@@ -40377,7 +40687,9 @@
       "cast.int": 2,
       "assignOp.invalid": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 5,
     "stars": 2584,
     "phan_results": {
@@ -40428,7 +40740,7 @@
       "function.notFound": 1,
       "trait.unused": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 6,
     "stars": 2581,
     "phan_results": {
@@ -40488,7 +40800,7 @@
       "callable.nonCallable": 1,
       "arguments.count": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 30,
     "stars": 2553,
     "phan_results": {
@@ -40548,7 +40860,7 @@
       "booleanAnd.leftAlwaysFalse": 1,
       "cast.string": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 4,
     "stars": 2533,
     "phan_results": {
@@ -40656,7 +40968,7 @@
       "foreach.nonIterable": 1,
       "trait.unused": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 5,
     "stars": 2529,
     "phan_results": {
@@ -40678,7 +40990,9 @@
       "property.unusedType": 3,
       "return.type": 2
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 63,
     "stars": 2521,
     "phan_results": {
@@ -40737,7 +41051,7 @@
       "function.alreadyNarrowedType": 1,
       "function.impossibleType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 2516,
     "phan_results": {
@@ -40792,7 +41106,9 @@
       "argument.type": 8,
       "offsetAccess.nonOffsetAccessible": 2
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 3,
     "stars": 2493,
     "phan_results": {
@@ -40835,7 +41151,7 @@
       "binaryOp.invalid": 1,
       "foreach.nonIterable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 5,
     "stars": 2446,
     "phan_results": {
@@ -40901,7 +41217,9 @@
       "identical.alwaysTrue": 1,
       "encapsedStringPart.nonString": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 3,
     "stars": 2439,
     "phan_results": {
@@ -41006,7 +41324,9 @@
       "method.unresolvableReturnType": 1,
       "offsetAccess.notFound": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 49,
     "stars": 2435,
     "phan_results": {
@@ -41125,7 +41445,9 @@
       "callable.nonCallable": 1,
       "cast.string": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 20,
     "stars": 2432,
     "phan_results": {
@@ -41231,7 +41553,9 @@
       "postInc.type": 1,
       "method.notFound": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 6,
     "stars": 2424,
     "phan_results": {
@@ -41296,7 +41620,9 @@
       "new.static": 1,
       "assign.propertyType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 5,
     "stars": 2418,
     "phan_results": {
@@ -41361,7 +41687,7 @@
       "property.onlyWritten": 1,
       "function.impossibleType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 14,
     "stars": 2384,
     "phan_results": {
@@ -41451,7 +41777,9 @@
       "function.notFound": 1,
       "missingType.generics": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phan"
+    ],
     "github_bugs": 18,
     "stars": 2352,
     "phan_results": {
@@ -41530,7 +41858,7 @@
       "trait.unused": 1,
       "assign.propertyType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 4,
     "stars": 2329,
     "phan_results": {
@@ -41594,7 +41922,7 @@
       "new.noConstructor": 1,
       "trait.unused": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 3,
     "stars": 2317,
     "phan_results": {
@@ -41703,7 +42031,7 @@
       "method.unused": 1,
       "function.alreadyNarrowedType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 27,
     "stars": 2283,
     "phan_results": {
@@ -41874,7 +42202,7 @@
       "print.nonString": 1,
       "isset.variable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 2288,
     "phan_results": {
@@ -42017,7 +42345,7 @@
       "if.alwaysFalse": 1,
       "variable.undefined": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 134,
     "stars": 2237,
     "phan_results": {
@@ -42164,7 +42492,7 @@
       "deadCode.unreachable": 1,
       "booleanOr.rightAlwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 4,
     "stars": 2235,
     "phan_results": {
@@ -42274,7 +42602,9 @@
       "throw.notThrowable": 1,
       "method.notFound": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 6,
     "stars": 2236,
     "phan_results": {
@@ -42392,7 +42722,7 @@
       "empty.variable": 1,
       "missingType.property": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 2215,
     "phan_results": {
@@ -42430,7 +42760,7 @@
       "variable.undefined": 1,
       "staticMethod.notFound": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 20,
     "stars": 2178,
     "phan_results": {
@@ -42485,7 +42815,9 @@
       "generator.keyType": 1,
       "assignOp.invalid": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 61,
     "stars": 2164,
     "phan_results": {
@@ -42595,7 +42927,7 @@
       "return.missing": 1,
       "cast.string": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 2151,
     "phan_results": {
@@ -42673,7 +43005,7 @@
       "assignOp.invalid": 1,
       "offsetAccess.nonArray": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 2143,
     "phan_results": {
@@ -42733,7 +43065,7 @@
       "class.nameCase": 1,
       "method.notFound": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 2137,
     "phan_results": {
@@ -42949,7 +43281,7 @@
       "varTag.multipleTags": 1,
       "generics.wrongParent": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 17,
     "stars": 2132
   },
@@ -42983,7 +43315,7 @@
       "missingType.generics": 1,
       "cast.int": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 3,
     "stars": 2112,
     "phan_results": {
@@ -43068,7 +43400,7 @@
       "foreach.nonIterable": 1,
       "callable.nonCallable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 1987,
     "phan_results": {
@@ -43125,7 +43457,7 @@
       "assign.propertyType": 1,
       "property.nonObject": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 5,
     "stars": 2002,
     "phan_results": {
@@ -43216,7 +43548,7 @@
       "foreach.nonIterable": 1,
       "variable.undefined": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 1949,
     "phan_results": {
@@ -43306,7 +43638,7 @@
       "booleanAnd.alwaysFalse": 1,
       "cast.string": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 1949,
     "phan_results": {
@@ -43373,7 +43705,9 @@
       "assignOp.invalid": 1,
       "encapsedStringPart.nonString": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 5,
     "stars": 1945,
     "phan_results": {
@@ -43465,7 +43799,7 @@
       "binaryOp.invalid": 1,
       "method.nonObject": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 1923,
     "phan_results": {
@@ -43540,7 +43874,9 @@
       "binaryOp.invalid": 1,
       "class.notFound": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 21,
     "stars": 1915,
     "phan_results": {
@@ -43641,7 +43977,9 @@
       "offsetAccess.nonOffsetAccessible": 1,
       "argument.type": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 1,
     "stars": 1904,
     "phan_results": {
@@ -43699,7 +44037,7 @@
       "if.alwaysTrue": 1,
       "deadCode.unreachable": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 13,
     "stars": 1871,
     "phan_results": {
@@ -43815,7 +44153,7 @@
       "booleanAnd.alwaysFalse": 1,
       "identical.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 8,
     "stars": 1872,
     "phan_results": {
@@ -43876,7 +44214,7 @@
       "binaryOp.invalid": 3,
       "return.type": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 1818,
     "phan_results": {
@@ -43919,7 +44257,9 @@
       "function.alreadyNarrowedType": 1,
       "assign.propertyType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "psalm"
+    ],
     "github_bugs": 29,
     "stars": 1824,
     "phan_results": {
@@ -43990,7 +44330,7 @@
       "parameterByRef.type": 1,
       "phpDoc.parseError": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 1814,
     "phan_results": {
@@ -44069,7 +44409,7 @@
       "class.notFound": 1,
       "notIdentical.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 7,
     "stars": 6162,
     "phan_results": {
@@ -44165,7 +44505,7 @@
       "nullCoalesce.offset": 1,
       "property.unusedType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 136,
     "stars": 3034,
     "phan_results": {
@@ -44271,7 +44611,7 @@
       "offsetAccess.nonArray": 1,
       "smaller.invalid": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 16,
     "stars": 2963,
     "phan_results": {
@@ -44330,7 +44670,7 @@
       "closure.unusedUse": 1,
       "assign.propertyType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 20,
     "stars": 2912,
     "phan_results": {
@@ -44413,7 +44753,7 @@
       "encapsedStringPart.nonString": 1,
       "new.static": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 9,
     "stars": 1812,
     "phan_results": {
@@ -44527,7 +44867,7 @@
       "assign.propertyType": 1,
       "variable.undefined": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 5,
     "stars": 1790,
     "phan_results": {
@@ -44614,7 +44954,9 @@
       "return.type": 2,
       "binaryOp.invalid": 2
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 1,
     "stars": 1783,
     "phan_results": {
@@ -44686,7 +45028,7 @@
       "empty.offset": 1,
       "if.alwaysTrue": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 3,
     "stars": 1775,
     "phan_results": {
@@ -44796,7 +45138,7 @@
       "array.duplicateKey": 1,
       "property.nonObject": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 1764,
     "phan_results": {
@@ -44927,7 +45269,7 @@
       "throws.notThrowable": 1,
       "identical.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 1741,
     "phan_results": {
@@ -45123,7 +45465,7 @@
       "missingType.generics": 1,
       "return.void": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 4,
     "stars": 1741,
     "phan_results": {
@@ -45225,7 +45567,7 @@
       "ternary.alwaysTrue": 1,
       "identical.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 1720,
     "phan_results": {
@@ -45332,7 +45674,7 @@
       "offsetAccess.notFound": 1,
       "return.void": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 1729,
     "phan_results": {
@@ -45448,7 +45790,9 @@
       "missingType.return": 1,
       "parameter.notFound": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 1,
     "stars": 1700,
     "phan_results": {
@@ -45498,7 +45842,7 @@
       "return.missing": 1,
       "return.type": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 1694,
     "phan_results": {
@@ -45553,7 +45897,10 @@
       "new.noConstructor": 1,
       "function.alreadyNarrowedType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "github_bugs": 1,
     "stars": 1684,
     "phan_results": {
@@ -45629,7 +45976,7 @@
       "trait.unused": 1,
       "missingType.parameter": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 1679,
     "phan_results": {
@@ -45686,7 +46033,7 @@
       "missingType.return": 1,
       "staticClassAccess.privateMethod": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 12,
     "stars": 1673,
     "phan_results": {
@@ -45766,7 +46113,7 @@
       "method.nonObject": 1,
       "arrayValues.list": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 3,
     "stars": 1666,
     "phan_results": {
@@ -45845,7 +46192,7 @@
       "missingType.parameter": 1,
       "binaryOp.invalid": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 44,
     "stars": 1660,
     "phan_results": {
@@ -45926,7 +46273,9 @@
       "staticMethod.notFound": 1,
       "generics.wrongParent": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 11,
     "stars": 1662,
     "phan_results": {
@@ -46016,7 +46365,7 @@
       "parameterByRef.unusedType": 1,
       "assignOp.invalid": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 3,
     "stars": 1646,
     "phan_results": {
@@ -46093,7 +46442,7 @@
       "assign.propertyType": 1,
       "variable.undefined": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 1641,
     "phan_results": {
@@ -46177,7 +46526,9 @@
       "foreach.nonIterable": 1,
       "assign.propertyType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 2,
     "stars": 1630,
     "phan_results": {
@@ -46252,7 +46603,9 @@
       "property.phpDocType": 1,
       "property.defaultValue": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 20,
     "stars": 1609,
     "phan_results": {
@@ -46364,7 +46717,7 @@
       "encapsedStringPart.nonString": 1,
       "assign.propertyType": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 2,
     "stars": 1603,
     "phan_results": {
@@ -46405,7 +46758,9 @@
       "return.void": 1,
       "method.void": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 4,
     "stars": 1598,
     "phan_results": {
@@ -46493,7 +46848,7 @@
       "missingType.return": 1,
       "offsetAccess.nonArray": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 1568,
     "phan_results": {
@@ -46553,7 +46908,9 @@
       "foreach.nonIterable": 1,
       "assign.propertyType": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 37,
     "stars": 1571,
     "phan_results": {
@@ -46949,7 +47306,9 @@
       "function.alreadyNarrowedType": 1,
       "cast.double": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 11,
     "stars": 1573,
     "phan_results": {
@@ -47080,7 +47439,7 @@
       "if.alwaysFalse": 1,
       "greater.invalid": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 123,
     "stars": 1559,
     "phan_results": {
@@ -47130,7 +47489,7 @@
       "foreach.nonIterable": 1,
       "booleanNot.alwaysFalse": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 1,
     "stars": 1531,
     "phan_results": {
@@ -47200,7 +47559,9 @@
       "method.childReturnType": 1,
       "foreach.nonIterable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 36,
     "stars": 5915,
     "phan_results": {
@@ -47339,7 +47700,9 @@
       "method.notFound": 1,
       "callable.nonCallable": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 207,
     "stars": 3713,
     "phan_results": {
@@ -47452,7 +47815,7 @@
       "if.alwaysTrue": 1,
       "offsetAccess.nonArray": 1
     },
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "github_bugs": 14,
     "stars": 3240,
     "phan_results": {
@@ -47517,7 +47880,9 @@
       "method.notFound": 1,
       "trait.unused": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 11,
     "stars": 2025,
     "phan_results": {
@@ -47629,7 +47994,9 @@
       "callable.nonCallable": 1,
       "staticMethod.nonObject": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 1,
     "stars": 1502
   },
@@ -47672,7 +48039,9 @@
       "staticMethod.notFound": 1,
       "assignOp.invalid": 1
     },
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "github_bugs": 169,
     "stars": 3410,
     "phan_results": {
@@ -47862,7 +48231,10 @@
       "total_bugs": 348
     },
     "stars": 22753,
-    "exists_analyzer": true
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ]
   },
   "matomo-org/matomo": {
     "lines_of_code": 352999,
@@ -47989,7 +48361,9 @@
       "total_bugs": 5019
     },
     "stars": 20513,
-    "exists_analyzer": true
+    "exists_analyzer": [
+      "phpstan"
+    ]
   },
   "briannesbitt/Carbon": {
     "lines_of_code": 164621,
@@ -48168,7 +48542,10 @@
     },
     "github_bugs": 87,
     "stars": 16627,
-    "exists_analyzer": true
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ]
   },
   "getgrav/grav": {
     "lines_of_code": 110163,
@@ -48496,7 +48873,11 @@
       "smaller.alwaysTrue": 1
     },
     "github_bugs": 418,
-    "stars": 14952
+    "stars": 14952,
+    "exists_analyzer": [
+      "phan",
+      "phpstan"
+    ]
   },
   "phpstan/phpstan": {
     "lines_of_code": 1965,
@@ -48617,7 +48998,9 @@
       "throws.notThrowable": 1
     },
     "github_bugs": 2171,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 13353
   },
   "ramsey/uuid": {
@@ -48639,7 +49022,9 @@
       "PhanAccessClassConstantInternal": 1
     },
     "github_bugs": 61,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 12536
   },
   "doctrine/inflector": {
@@ -48662,7 +49047,9 @@
       "PossiblyFalseOperand": 1
     },
     "github_bugs": 3,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 11315
   },
   "wallabag/wallabag": {
@@ -48773,7 +49160,9 @@
       "LessSpecificReturnStatement": 1
     },
     "github_bugs": 682,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 11247
   },
   "doctrine/instantiator": {
@@ -48800,7 +49189,9 @@
       "return.type": 2
     },
     "github_bugs": 3,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 11000
   },
   "rectorphp/rector": {
@@ -48971,7 +49362,7 @@
       "UnrecognizedStatement": 1
     },
     "github_bugs": 2250,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 9575,
     "phpstan_results": {
       "return.unusedType": 2566,
@@ -49068,7 +49459,10 @@
       "DeprecatedMethod": 1
     },
     "github_bugs": 4,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "stars": 9374
   },
   "phpDocumentor/TypeResolver": {
@@ -49086,7 +49480,10 @@
       "PhanParamTooFewUnpack": 1
     },
     "github_bugs": 1,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "stars": 9178
   },
   "reactphp/reactphp": {
@@ -49096,7 +49493,7 @@
     },
     "psalm_results": {},
     "github_bugs": 13,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 9018
   },
   "invoiceninja/invoiceninja": {
@@ -49368,7 +49765,9 @@
       "LessSpecificReturnType": 1
     },
     "github_bugs": 501,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 8815
   },
   "akaunting/akaunting": {
@@ -49582,7 +49981,7 @@
       "InvalidScope": 1
     },
     "github_bugs": 453,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 8593
   },
   "Sylius/Sylius": {
@@ -49867,7 +50266,9 @@
       "preDec.type": 1
     },
     "github_bugs": 182,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 8207
   },
   "mautic/mautic": {
@@ -50277,7 +50678,9 @@
       "array.invalidKey": 1
     },
     "github_bugs": 3492,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 8079
   },
   "pterodactyl/panel": {
@@ -50482,7 +50885,9 @@
       "clone.nonObject": 1
     },
     "github_bugs": 708,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 7544
   },
   "PrivateBin/PrivateBin": {
@@ -50601,7 +51006,7 @@
       "UndefinedThisPropertyAssignment": 1
     },
     "github_bugs": 145,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 7158
   },
   "mongodb/laravel-mongodb": {
@@ -50825,7 +51230,9 @@
       "nullCoalesce.expr": 1
     },
     "github_bugs": 90,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 7069
   },
   "hyperf/hyperf": {
@@ -51113,7 +51520,9 @@
       "requireOnce.fileNotFound": 1
     },
     "github_bugs": 1144,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 6473
   },
   "PrestaShop/PrestaShop": {
@@ -51414,7 +51823,9 @@
       "InvalidLiteralArgument": 1
     },
     "github_bugs": 9701,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 8544
   },
   "solidtime-io/solidtime": {
@@ -51577,7 +51988,9 @@
       "nullsafe.neverNull": 1
     },
     "github_bugs": 23,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 6249
   },
   "doctrine/collections": {
@@ -51617,7 +52030,9 @@
       "instanceof.alwaysTrue": 1
     },
     "github_bugs": 7,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 5938
   },
   "Respect/Validation": {
@@ -51699,7 +52114,9 @@
       "varTag.nativeType": 1
     },
     "github_bugs": 71,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 5864
   },
   "doctrine/common": {
@@ -51713,7 +52130,10 @@
       "PhanUndeclaredClassConstant": 1
     },
     "github_bugs": 217,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "stars": 5805
   },
   "spatie/laravel-backup": {
@@ -51805,7 +52225,9 @@
       "PossiblyInvalidPropertyAssignmentValue": 1
     },
     "github_bugs": 20,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 5801
   },
   "codeigniter4/CodeIgniter4": {
@@ -52088,7 +52510,10 @@
       "UndefinedPropertyFetch": 1
     },
     "github_bugs": 930,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "stars": 5589
   },
   "timber/timber": {
@@ -52313,7 +52738,9 @@
       "InvalidScope": 1
     },
     "github_bugs": 87,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 5584
   },
   "zircote/swagger-php": {
@@ -52362,7 +52789,10 @@
       "PhanCompatibleMatchExpression": 1
     },
     "github_bugs": 65,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "stars": 5189
   },
   "nikic/FastRoute": {
@@ -52414,7 +52844,9 @@
       "InvalidReturnType": 1
     },
     "github_bugs": 2,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 5186
   },
   "passbolt/passbolt_api": {
@@ -52486,7 +52918,10 @@
       "PhanUndeclaredConstant": 1
     },
     "github_bugs": 139,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "stars": 5034
   },
   "doctrine/migrations": {
@@ -52571,7 +53006,9 @@
       "cast.string": 1
     },
     "github_bugs": 26,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 4724
   },
   "KnpLabs/snappy": {
@@ -52604,7 +53041,9 @@
       "cast.int": 1
     },
     "github_bugs": 5,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 4439
   },
   "phpDocumentor/phpDocumentor": {
@@ -52744,7 +53183,9 @@
       "MissingClosureReturnType": 1
     },
     "github_bugs": 613,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 4211
   },
   "doctrine/persistence": {
@@ -52797,7 +53238,9 @@
       "instanceof.alwaysTrue": 1
     },
     "github_bugs": 6,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 3990
   },
   "geocoder-php/Geocoder": {
@@ -52907,7 +53350,9 @@
       "MixedArrayOffset": 1
     },
     "github_bugs": 52,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 3955
   },
   "laravel-zero/laravel-zero": {
@@ -52925,7 +53370,7 @@
       "PossiblyUnusedMethod": 1
     },
     "github_bugs": 29,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 3821
   },
   "Crinsane/LaravelShoppingcart": {
@@ -52976,7 +53421,7 @@
       "booleanOr.alwaysFalse": 1
     },
     "github_bugs": 2,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 3705
   },
   "ampache/ampache": {
@@ -53196,7 +53641,9 @@
       "ReservedWord": 1
     },
     "github_bugs": 318,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 3640
   },
   "jsonrainbow/json-schema": {
@@ -53304,7 +53751,9 @@
       "missingType.generics": 1
     },
     "github_bugs": 8,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 3579
   },
   "pimcore/pimcore": {
@@ -53400,7 +53849,9 @@
       "PhanTypeArraySuspicious": 1
     },
     "github_bugs": 2998,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 3563
   },
   "mpociot/laravel-apidoc-generator": {
@@ -53471,7 +53922,9 @@
       "UndefinedInterfaceMethod": 1
     },
     "github_bugs": 19,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 3455
   },
   "freescout-help-desk/freescout": {
@@ -53886,7 +54339,7 @@
       "smallerOrEqual.alwaysFalse": 1
     },
     "github_bugs": 1,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 3453
   },
   "thephpleague/csv": {
@@ -54066,7 +54519,9 @@
       "property.nonObject": 1
     },
     "github_bugs": 30,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 3415
   },
   "craftcms/cms": {
@@ -54412,7 +54867,9 @@
       "if.alwaysTrue": 1
     },
     "github_bugs": 4486,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 3415
   },
   "Volmarg/personal-management-system": {
@@ -54658,7 +55115,9 @@
       "property.unused": 1
     },
     "github_bugs": 17,
-    "exists_analyzer": false,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 3356
   },
   "bshaffer/oauth2-server-php": {
@@ -54790,7 +55249,7 @@
       "UnusedParam": 1
     },
     "github_bugs": 5,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 3271
   },
   "pyrocms/pyrocms": {
@@ -54831,7 +55290,7 @@
       "variable.undefined": 1
     },
     "github_bugs": 228,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 3183
   },
   "CodelyTV/php-ddd-example": {
@@ -54856,7 +55315,10 @@
       "PhanTemplateTypeNotUsedInFunctionReturn": 1
     },
     "github_bugs": 4,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "stars": 3053
   },
   "CMB2/CMB2": {
@@ -54968,7 +55430,7 @@
       "parameter.defaultValue": 1
     },
     "github_bugs": 82,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 2980
   },
   "Tai7sy/card-system": {
@@ -55057,7 +55519,7 @@
       "missingType.iterableValue": 1
     },
     "github_bugs": 14,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 2889
   },
   "LinkStackOrg/LinkStack": {
@@ -55183,7 +55645,7 @@
       "InvalidScope": 1
     },
     "github_bugs": 29,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 2821
   },
   "deptrac/deptrac": {
@@ -55259,7 +55721,7 @@
       "MixedPropertyFetch": 1
     },
     "github_bugs": 39,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 2746
   },
   "Bubka/2FAuth": {
@@ -55429,7 +55891,9 @@
       "argument.templateType": 1
     },
     "github_bugs": 89,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 2739
   },
   "InvoicePlane/InvoicePlane": {
@@ -55619,7 +56083,7 @@
       "logicalOr.resultUnused": 1
     },
     "github_bugs": 61,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 2704
   },
   "5ime/video_spider": {
@@ -55670,7 +56134,7 @@
       "staticMethod.nonObject": 1
     },
     "github_bugs": 1,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 2694
   },
   "lexik/LexikJWTAuthenticationBundle": {
@@ -55804,7 +56268,9 @@
       "booleanOr.alwaysTrue": 1
     },
     "github_bugs": 24,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 2550
   },
   "composer/xdebug-handler": {
@@ -55845,7 +56311,9 @@
       "argument.type": 2
     },
     "github_bugs": 1,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 2532
   },
   "nelmio/alice": {
@@ -55999,7 +56467,9 @@
       "offsetAccess.nonArray": 1
     },
     "github_bugs": 117,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 2529
   },
   "api-platform/core": {
@@ -56250,7 +56720,9 @@
       "UnrecognizedStatement": 1
     },
     "github_bugs": 433,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 2499
   },
   "nunomaduro/termwind": {
@@ -56311,7 +56783,9 @@
       "assign.propertyType": 1
     },
     "github_bugs": 3,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 2413
   },
   "YahnisElsts/plugin-update-checker": {
@@ -56348,7 +56822,7 @@
       "PhanNoopNew": 1
     },
     "github_bugs": 12,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 2340
   },
   "mikebronner/laravel-model-caching": {
@@ -56403,7 +56877,7 @@
       "new.noConstructor": 2
     },
     "github_bugs": 45,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 2302
   },
   "hwi/HWIOAuthBundle": {
@@ -56524,7 +56998,9 @@
       "PossiblyUndefinedMethod": 1
     },
     "github_bugs": 108,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 2296
   },
   "ruflin/Elastica": {
@@ -56644,7 +57120,9 @@
       "preInc.type": 1
     },
     "github_bugs": 18,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 2266
   },
   "nelmio/NelmioApiDocBundle": {
@@ -56775,7 +57253,9 @@
       "method.unused": 1
     },
     "github_bugs": 103,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 2262
   },
   "bezhanSalleh/filament-shield": {
@@ -56865,7 +57345,9 @@
       "ArgumentTypeCoercion": 1
     },
     "github_bugs": 27,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 2251
   },
   "gabrielrcouto/php-gui": {
@@ -56996,7 +57478,7 @@
       "arguments.count": 1
     },
     "github_bugs": 7,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 2245
   },
   "etrepat/baum": {
@@ -57102,7 +57584,7 @@
       "ReservedWord": 1
     },
     "github_bugs": 5,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 2242
   },
   "KnpLabs/php-github-api": {
@@ -57187,7 +57669,9 @@
       "MixedOperand": 1
     },
     "github_bugs": 19,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 2191
   },
   "leafo/lessphp": {
@@ -57245,7 +57729,7 @@
       "MethodSignatureMismatch": 1
     },
     "github_bugs": 16,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 2190
   },
   "php-enqueue/enqueue-dev": {
@@ -57506,7 +57990,9 @@
       "booleanAnd.rightAlwaysTrue": 1
     },
     "github_bugs": 84,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 2189
   },
   "Hasnayeen/invobook": {
@@ -57637,7 +58123,9 @@
       "encapsedStringPart.nonString": 1
     },
     "github_bugs": 14,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 2172
   },
   "RubixML/ML": {
@@ -57679,7 +58167,9 @@
       "PhanParamTooManyUnpack": 1
     },
     "github_bugs": 18,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 2129
   },
   "sonata-project/SonataAdminBundle": {
@@ -57745,7 +58235,10 @@
       "deadCode.unreachable": 1
     },
     "github_bugs": 569,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "stars": 2111
   },
   "phpbench/phpbench": {
@@ -57900,7 +58393,9 @@
       "RedundantFunctionCall": 1
     },
     "github_bugs": 80,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 1942
   },
   "Payum/Payum": {
@@ -58121,7 +58616,9 @@
       "deadCode.unreachable": 1
     },
     "github_bugs": 30,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 1884
   },
   "antonioribeiro/countries": {
@@ -58167,7 +58664,7 @@
       "callable.nonCallable": 1
     },
     "github_bugs": 1,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 1870
   },
   "getsentry/sentry-php": {
@@ -58207,7 +58704,10 @@
       "PhanUndeclaredFunction": 1
     },
     "github_bugs": 1,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ],
     "stars": 1866
   },
   "summerblue/phphub": {
@@ -58269,7 +58769,7 @@
       "array.duplicateKey": 1
     },
     "github_bugs": 4,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 1812
   },
   "SimpleRegex/SRL-PHP": {
@@ -58334,7 +58834,7 @@
       "PossiblyUnusedProperty": 1
     },
     "github_bugs": 5,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 1797
   },
   "louislivi/SMProxy": {
@@ -58425,7 +58925,7 @@
       "parameter.phpDocType": 1
     },
     "github_bugs": 1,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 1778
   },
   "helloxz/imgurl": {
@@ -58634,7 +59134,7 @@
       "MixedPropertyTypeCoercion": 1
     },
     "github_bugs": 1,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 1766
   },
   "reduxframework/redux-framework": {
@@ -58915,7 +59415,7 @@
       "property.onlyWritten": 1
     },
     "github_bugs": 18,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 1757
   },
   "FGRibreau/mailchecker": {
@@ -58939,7 +59439,7 @@
       "ArgumentTypeCoercion": 1
     },
     "github_bugs": 1,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 1746
   },
   "stefanzweifel/laravel-stats": {
@@ -59019,7 +59519,9 @@
       "encapsedStringPart.nonString": 1
     },
     "github_bugs": 14,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 1741
   },
   "stevegrunwell/asimov": {
@@ -59029,7 +59531,7 @@
     },
     "psalm_results": {},
     "github_bugs": 2,
-    "exists_analyzer": false,
+    "exists_analyzer": [],
     "stars": 1688
   },
   "johnbillion/query-monitor": {
@@ -59103,7 +59605,9 @@
       "new.noConstructor": 1
     },
     "github_bugs": 117,
-    "exists_analyzer": true,
+    "exists_analyzer": [
+      "phpstan"
+    ],
     "stars": 1666
   },
   "sabre-io/dav": {
@@ -59288,7 +59792,9 @@
       "property.defaultValue": 1
     },
     "github_bugs": 247,
-    "exists_analyzer": true
+    "exists_analyzer": [
+      "phpstan"
+    ]
   },
   "mongodb/mongo-php-library": {
     "lines_of_code": 74759,
@@ -59472,7 +59978,9 @@
       "generics.noParent": 1
     },
     "github_bugs": 18,
-    "exists_analyzer": true
+    "exists_analyzer": [
+      "psalm"
+    ]
   },
   "phpactor/phpactor": {
     "lines_of_code": 121340,
@@ -59569,7 +60077,9 @@
       "PhanAccessPropertyPrivate": 1
     },
     "github_bugs": 248,
-    "exists_analyzer": true
+    "exists_analyzer": [
+      "phpstan"
+    ]
   },
   "slimphp/Slim-Skeleton": {
     "lines_of_code": 885,
@@ -59595,7 +60105,9 @@
       "RiskyTruthyFalsyComparison": 1
     },
     "github_bugs": 1,
-    "exists_analyzer": true
+    "exists_analyzer": [
+      "phpstan"
+    ]
   },
   "minkphp/Mink": {
     "lines_of_code": 5594,
@@ -59638,7 +60150,9 @@
       "instanceof.alwaysTrue": 1
     },
     "github_bugs": 20,
-    "exists_analyzer": true
+    "exists_analyzer": [
+      "phpstan"
+    ]
   },
   "Power-Components/livewire-powergrid": {
     "lines_of_code": 15458,
@@ -59775,7 +60289,9 @@
       "trait.unused": 1
     },
     "github_bugs": 126,
-    "exists_analyzer": true
+    "exists_analyzer": [
+      "phpstan"
+    ]
   },
   "henrywhitaker3/Speedtest-Tracker": {
     "lines_of_code": 6896,
@@ -59920,7 +60436,9 @@
       "parameter.phpDocType": 1
     },
     "github_bugs": 185,
-    "exists_analyzer": true
+    "exists_analyzer": [
+      "phpstan"
+    ]
   },
   "hashtopolis/server": {
     "lines_of_code": 36240,
@@ -60084,7 +60602,9 @@
       "MixedFunctionCall": 1
     },
     "github_bugs": 221,
-    "exists_analyzer": false
+    "exists_analyzer": [
+      "phpstan"
+    ]
   },
   "simplepie/simplepie": {
     "lines_of_code": 26754,
@@ -60228,7 +60748,9 @@
       "argument.unresolvableType": 1
     },
     "github_bugs": 40,
-    "exists_analyzer": true
+    "exists_analyzer": [
+      "phpstan"
+    ]
   },
   "coollabsio/coolify": {
     "lines_of_code": 68025,
@@ -60483,7 +61005,9 @@
     "github_bugs": {
       "total_bugs": 0
     },
-    "exists_analyzer": false
+    "exists_analyzer": [
+      "phpstan"
+    ]
   },
   "guzzle/guzzle": {
     "lines_of_code": 9644,
@@ -60614,7 +61138,10 @@
     "github_bugs": {
       "total_bugs": 0
     },
-    "exists_analyzer": true
+    "exists_analyzer": [
+      "phpstan",
+      "psalm"
+    ]
   },
   "livewire/livewire": {
     "lines_of_code": 40179,
@@ -60842,7 +61369,7 @@
     "github_bugs": {
       "total_bugs": 0
     },
-    "exists_analyzer": false
+    "exists_analyzer": []
   },
   "DesignPatternsPHP/DesignPatternsPHP": {
     "lines_of_code": 3174,
@@ -60859,7 +61386,9 @@
     "github_bugs": {
       "total_bugs": 0
     },
-    "exists_analyzer": true
+    "exists_analyzer": [
+      "psalm"
+    ]
   },
   "sebastianbergmann/phpunit": {
     "lines_of_code": 277291,
@@ -60996,7 +61525,9 @@
     "github_bugs": {
       "total_bugs": 0
     },
-    "exists_analyzer": true
+    "exists_analyzer": [
+      "phpstan"
+    ]
   },
   "firefly-iii/firefly-iii": {
     "lines_of_code": 109284,
@@ -61166,7 +61697,9 @@
     "github_bugs": {
       "total_bugs": 0
     },
-    "exists_analyzer": false
+    "exists_analyzer": [
+      "phpstan"
+    ]
   },
   "barryvdh/laravel-debugbar": {
     "lines_of_code": 5288,
@@ -61324,7 +61857,7 @@
     "github_bugs": {
       "total_bugs": 0
     },
-    "exists_analyzer": false
+    "exists_analyzer": []
   },
   "nikic/PHP-Parser": {
     "lines_of_code": 23083,
@@ -61525,6 +62058,8 @@
     "github_bugs": {
       "total_bugs": 0
     },
-    "exists_analyzer": true
+    "exists_analyzer": [
+      "phpstan"
+    ]
   }
 }
