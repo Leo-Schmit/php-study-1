@@ -1,0 +1,634 @@
+<h1>By Category (max ρ, ρ > 0.4)</h1>
+<table class="dataframe table table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th>category</th>
+      <th>warning_type</th>
+      <th>analyzer</th>
+      <th>rho</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Array Access</td>
+      <td>PhanTypeMismatchDimFetchNullable</td>
+      <td>Phan</td>
+      <td>0.474</td>
+    </tr>
+    <tr>
+      <td>Array Access</td>
+      <td>foreach.nonIterable</td>
+      <td>Phpstan</td>
+      <td>0.497</td>
+    </tr>
+    <tr>
+      <td>Array Access</td>
+      <td>offsetAccess.nonArray</td>
+      <td>Phpstan</td>
+      <td>0.426</td>
+    </tr>
+    <tr>
+      <td>Array Access</td>
+      <td>offsetAccess.notFound</td>
+      <td>Phpstan</td>
+      <td>0.509</td>
+    </tr>
+    <tr>
+      <td>Logical Conditions</td>
+      <td>booleanNot.alwaysFalse</td>
+      <td>Phpstan</td>
+      <td>0.422</td>
+    </tr>
+    <tr>
+      <td>Logical Conditions</td>
+      <td>identical.alwaysFalse</td>
+      <td>Phpstan</td>
+      <td>0.435</td>
+    </tr>
+    <tr>
+      <td>Logical Conditions</td>
+      <td>notIdentical.alwaysTrue</td>
+      <td>Phpstan</td>
+      <td>0.408</td>
+    </tr>
+    <tr>
+      <td>Nullability</td>
+      <td>PhanTypeMismatchArgumentNullable</td>
+      <td>Phan</td>
+      <td>0.416</td>
+    </tr>
+    <tr>
+      <td>Nullability</td>
+      <td>PossiblyNullArgument</td>
+      <td>Psalm</td>
+      <td>0.465</td>
+    </tr>
+    <tr>
+      <td>Nullability</td>
+      <td>PossiblyNullIterator</td>
+      <td>Psalm</td>
+      <td>0.476</td>
+    </tr>
+    <tr>
+      <td>Nullability</td>
+      <td>PossiblyNullPropertyFetch</td>
+      <td>Psalm</td>
+      <td>0.493</td>
+    </tr>
+    <tr>
+      <td>Nullability</td>
+      <td>PossiblyNullReference</td>
+      <td>Psalm</td>
+      <td>0.443</td>
+    </tr>
+    <tr>
+      <td>Type Mismatch</td>
+      <td>MixedArrayAccess</td>
+      <td>Psalm</td>
+      <td>0.477</td>
+    </tr>
+    <tr>
+      <td>Type Mismatch</td>
+      <td>MixedArrayAssignment</td>
+      <td>Psalm</td>
+      <td>0.491</td>
+    </tr>
+    <tr>
+      <td>Type Mismatch</td>
+      <td>MixedPropertyAssignment</td>
+      <td>Psalm</td>
+      <td>0.454</td>
+    </tr>
+    <tr>
+      <td>Type Mismatch</td>
+      <td>PossiblyInvalidPropertyAssignmentValue</td>
+      <td>Psalm</td>
+      <td>0.438</td>
+    </tr>
+    <tr>
+      <td>Undefined Reference</td>
+      <td>PhanPossiblyUndeclaredVariable</td>
+      <td>Phan</td>
+      <td>0.457</td>
+    </tr>
+    <tr>
+      <td>Undefined Reference</td>
+      <td>PhanUndeclaredClassConstant</td>
+      <td>Phan</td>
+      <td>0.482</td>
+    </tr>
+    <tr>
+      <td>Undefined Reference</td>
+      <td>PhanUndeclaredGlobalVariable</td>
+      <td>Phan</td>
+      <td>0.432</td>
+    </tr>
+    <tr>
+      <td>Undefined Reference</td>
+      <td>PhanUndeclaredVariableDim</td>
+      <td>Phan</td>
+      <td>0.460</td>
+    </tr>
+  </tbody>
+</table>
+<hr/>
+<h2>Phan</h2>
+<table class="dataframe table table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th>warning_type</th>
+      <th>ρ</th>
+      <th>Analyzer Present</th>
+      <th>Correlation Group</th>
+      <th>category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PhanAccessClassInternal</td>
+      <td>0.393</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Undefined Reference</td>
+    </tr>
+    <tr>
+      <td>PhanParamSignatureMismatch</td>
+      <td>0.384</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>PhanParamSignatureMismatch</td>
+      <td>0.358</td>
+      <td>–</td>
+      <td>near-moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>PhanPossiblyUndeclaredVariable</td>
+      <td>0.457</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Undefined Reference</td>
+    </tr>
+    <tr>
+      <td>PhanPossiblyUndeclaredVariable</td>
+      <td>0.410</td>
+      <td>–</td>
+      <td>moderate</td>
+      <td>Undefined Reference</td>
+    </tr>
+    <tr>
+      <td>PhanTypeMismatchArgumentNullable</td>
+      <td>0.409</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Nullability</td>
+    </tr>
+    <tr>
+      <td>PhanTypeMismatchArgumentNullable</td>
+      <td>0.416</td>
+      <td>–</td>
+      <td>moderate</td>
+      <td>Nullability</td>
+    </tr>
+    <tr>
+      <td>PhanTypeMismatchDimFetchNullable</td>
+      <td>0.474</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Array Access</td>
+    </tr>
+    <tr>
+      <td>PhanUndeclaredClassConstant</td>
+      <td>0.482</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Undefined Reference</td>
+    </tr>
+    <tr>
+      <td>PhanUndeclaredClassConstant</td>
+      <td>0.377</td>
+      <td>–</td>
+      <td>near-moderate</td>
+      <td>Undefined Reference</td>
+    </tr>
+    <tr>
+      <td>PhanUndeclaredGlobalVariable</td>
+      <td>0.370</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Undefined Reference</td>
+    </tr>
+    <tr>
+      <td>PhanUndeclaredGlobalVariable</td>
+      <td>0.432</td>
+      <td>–</td>
+      <td>moderate</td>
+      <td>Undefined Reference</td>
+    </tr>
+    <tr>
+      <td>PhanUndeclaredVariableDim</td>
+      <td>0.460</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Undefined Reference</td>
+    </tr>
+    <tr>
+      <td>PhanUndeclaredVariableDim</td>
+      <td>0.441</td>
+      <td>–</td>
+      <td>moderate</td>
+      <td>Undefined Reference</td>
+    </tr>
+    <tr>
+      <td>PhanUnreferencedUseNormal</td>
+      <td>0.352</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Unused Code</td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+<h2>Phpstan</h2>
+<table class="dataframe table table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th>warning_type</th>
+      <th>ρ</th>
+      <th>Analyzer Present</th>
+      <th>Correlation Group</th>
+      <th>category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>booleanAnd.leftAlwaysTrue</td>
+      <td>0.365</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Logical Conditions</td>
+    </tr>
+    <tr>
+      <td>booleanAnd.leftAlwaysTrue</td>
+      <td>0.387</td>
+      <td>–</td>
+      <td>near-moderate</td>
+      <td>Logical Conditions</td>
+    </tr>
+    <tr>
+      <td>booleanAnd.rightAlwaysTrue</td>
+      <td>0.361</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Logical Conditions</td>
+    </tr>
+    <tr>
+      <td>booleanNot.alwaysFalse</td>
+      <td>0.422</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Logical Conditions</td>
+    </tr>
+    <tr>
+      <td>booleanNot.alwaysFalse</td>
+      <td>0.379</td>
+      <td>–</td>
+      <td>near-moderate</td>
+      <td>Logical Conditions</td>
+    </tr>
+    <tr>
+      <td>cast.int</td>
+      <td>0.351</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>echo.nonString</td>
+      <td>0.357</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>echo.nonString</td>
+      <td>0.386</td>
+      <td>–</td>
+      <td>near-moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>foreach.nonIterable</td>
+      <td>0.497</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Array Access</td>
+    </tr>
+    <tr>
+      <td>foreach.nonIterable</td>
+      <td>0.476</td>
+      <td>–</td>
+      <td>moderate</td>
+      <td>Array Access</td>
+    </tr>
+    <tr>
+      <td>identical.alwaysFalse</td>
+      <td>0.435</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Logical Conditions</td>
+    </tr>
+    <tr>
+      <td>identical.alwaysFalse</td>
+      <td>0.418</td>
+      <td>–</td>
+      <td>moderate</td>
+      <td>Logical Conditions</td>
+    </tr>
+    <tr>
+      <td>isset.offset</td>
+      <td>0.375</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Array Access</td>
+    </tr>
+    <tr>
+      <td>isset.offset</td>
+      <td>0.383</td>
+      <td>–</td>
+      <td>near-moderate</td>
+      <td>Array Access</td>
+    </tr>
+    <tr>
+      <td>notIdentical.alwaysTrue</td>
+      <td>0.397</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Logical Conditions</td>
+    </tr>
+    <tr>
+      <td>notIdentical.alwaysTrue</td>
+      <td>0.408</td>
+      <td>–</td>
+      <td>moderate</td>
+      <td>Logical Conditions</td>
+    </tr>
+    <tr>
+      <td>offsetAccess.invalidOffset</td>
+      <td>0.385</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Array Access</td>
+    </tr>
+    <tr>
+      <td>offsetAccess.nonArray</td>
+      <td>0.426</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Array Access</td>
+    </tr>
+    <tr>
+      <td>offsetAccess.nonArray</td>
+      <td>0.355</td>
+      <td>–</td>
+      <td>near-moderate</td>
+      <td>Array Access</td>
+    </tr>
+    <tr>
+      <td>offsetAccess.notFound</td>
+      <td>0.509</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Array Access</td>
+    </tr>
+    <tr>
+      <td>offsetAccess.notFound</td>
+      <td>0.467</td>
+      <td>–</td>
+      <td>moderate</td>
+      <td>Array Access</td>
+    </tr>
+    <tr>
+      <td>property.notFound</td>
+      <td>0.379</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Undefined Reference</td>
+    </tr>
+    <tr>
+      <td>variable.undefined</td>
+      <td>0.363</td>
+      <td>–</td>
+      <td>near-moderate</td>
+      <td>Undefined Reference</td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+<h2>Psalm</h2>
+<table class="dataframe table table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th>warning_type</th>
+      <th>ρ</th>
+      <th>Analyzer Present</th>
+      <th>Correlation Group</th>
+      <th>category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MixedArrayAccess</td>
+      <td>0.477</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>MixedArrayAccess</td>
+      <td>0.427</td>
+      <td>–</td>
+      <td>moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>MixedArrayAssignment</td>
+      <td>0.491</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>MixedArrayAssignment</td>
+      <td>0.482</td>
+      <td>–</td>
+      <td>moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>MixedPropertyAssignment</td>
+      <td>0.454</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>MixedPropertyAssignment</td>
+      <td>0.448</td>
+      <td>–</td>
+      <td>moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>MixedPropertyFetch</td>
+      <td>0.372</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>MixedPropertyFetch</td>
+      <td>0.357</td>
+      <td>–</td>
+      <td>near-moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>MixedReturnTypeCoercion</td>
+      <td>0.387</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>MixedReturnTypeCoercion</td>
+      <td>0.373</td>
+      <td>–</td>
+      <td>near-moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>MoreSpecificReturnType</td>
+      <td>0.360</td>
+      <td>–</td>
+      <td>near-moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>NullArgument</td>
+      <td>0.377</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Nullability</td>
+    </tr>
+    <tr>
+      <td>PossiblyInvalidPropertyAssignmentValue</td>
+      <td>0.438</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>PossiblyInvalidPropertyAssignmentValue</td>
+      <td>0.352</td>
+      <td>–</td>
+      <td>near-moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>PossiblyNullArgument</td>
+      <td>0.465</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Nullability</td>
+    </tr>
+    <tr>
+      <td>PossiblyNullArgument</td>
+      <td>0.421</td>
+      <td>–</td>
+      <td>moderate</td>
+      <td>Nullability</td>
+    </tr>
+    <tr>
+      <td>PossiblyNullIterator</td>
+      <td>0.476</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Nullability</td>
+    </tr>
+    <tr>
+      <td>PossiblyNullPropertyFetch</td>
+      <td>0.493</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Nullability</td>
+    </tr>
+    <tr>
+      <td>PossiblyNullPropertyFetch</td>
+      <td>0.409</td>
+      <td>–</td>
+      <td>moderate</td>
+      <td>Nullability</td>
+    </tr>
+    <tr>
+      <td>PossiblyNullReference</td>
+      <td>0.443</td>
+      <td>+</td>
+      <td>moderate</td>
+      <td>Nullability</td>
+    </tr>
+    <tr>
+      <td>PossiblyNullReference</td>
+      <td>0.426</td>
+      <td>–</td>
+      <td>moderate</td>
+      <td>Nullability</td>
+    </tr>
+    <tr>
+      <td>UndefinedPropertyFetch</td>
+      <td>0.370</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Undefined Reference</td>
+    </tr>
+    <tr>
+      <td>UnsupportedPropertyReferenceUsage</td>
+      <td>0.396</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Type Mismatch</td>
+    </tr>
+    <tr>
+      <td>UnusedForeachValue</td>
+      <td>0.379</td>
+      <td>+</td>
+      <td>near-moderate</td>
+      <td>Unused Code</td>
+    </tr>
+    <tr>
+      <td>UnusedForeachValue</td>
+      <td>0.355</td>
+      <td>–</td>
+      <td>near-moderate</td>
+      <td>Unused Code</td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+
+<hr/>
+<h1>Stats</h1>
+<table сellpadding='5' cellspacing='0'>
+  <tr><th>Name</th><th>With Analyzer</th><th>Without Analyzer</th></tr>
+  <tr><td>Number of Repos</td><td>253</td><td>228</td></tr>
+  <tr><td>Total Lines of Code</td><td>17,273,890</td><td>5,810,866</td></tr>
+  <tr><td>Total Stars</td><td>1,455,770</td><td>868,840</td></tr>
+  <tr><td>Total GitHub Bugs</td><td>99,001</td><td>23,518</td></tr>
+  <tr><td>GitHub Bugs per 1000 LOC</td><td>5.73</td><td>4.05</td></tr>
+  <tr><td>Avg. Lines of Code</td><td>68,276</td><td>25,486</td></tr>
+  <tr><td>Avg. Stars</td><td>5,754</td><td>3,810</td></tr>
+  <tr><td>Avg. GitHub Bugs</td><td>391</td><td>103</td></tr>
+</table>

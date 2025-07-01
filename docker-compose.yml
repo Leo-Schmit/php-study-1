@@ -1,0 +1,11 @@
+services:
+  analyzer:
+    build: .
+    image: php-analyzer:latest
+    environment:
+      - GITHUB_TOKEN
+    volumes:
+      - ./workspace:/app/workspace
+      - ./results:/app/results
+      - /var/run/docker.sock:/var/run/docker.sock
+

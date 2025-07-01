@@ -1,0 +1,11 @@
+warning_type,rho,p_value
+foreach.nonIterable,0.476,p < 0.001
+offsetAccess.notFound,0.467,p < 0.001
+identical.alwaysFalse,0.418,p < 0.001
+notIdentical.alwaysTrue,0.408,p < 0.001
+booleanAnd.leftAlwaysTrue,0.387,p < 0.001
+echo.nonString,0.386,p < 0.001
+isset.offset,0.383,p < 0.001
+booleanNot.alwaysFalse,0.379,p < 0.001
+variable.undefined,0.363,p < 0.001
+offsetAccess.nonArray,0.355,p < 0.001

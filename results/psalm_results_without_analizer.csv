@@ -1,0 +1,12 @@
+warning_type,rho,p_value
+MixedArrayAssignment,0.482,p < 0.001
+MixedPropertyAssignment,0.448,p < 0.001
+MixedArrayAccess,0.427,p < 0.001
+PossiblyNullReference,0.426,p < 0.001
+PossiblyNullArgument,0.421,p < 0.001
+PossiblyNullPropertyFetch,0.409,p < 0.001
+MixedReturnTypeCoercion,0.373,p < 0.001
+MoreSpecificReturnType,0.36,p < 0.001
+MixedPropertyFetch,0.357,p < 0.001
+UnusedForeachValue,0.355,p < 0.001
+PossiblyInvalidPropertyAssignmentValue,0.352,p < 0.001

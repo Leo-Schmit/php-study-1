@@ -1,0 +1,14 @@
+warning_type,rho,p_value
+offsetAccess.notFound,0.509,p < 0.001
+foreach.nonIterable,0.497,p < 0.001
+identical.alwaysFalse,0.435,p < 0.001
+offsetAccess.nonArray,0.426,p < 0.001
+booleanNot.alwaysFalse,0.422,p < 0.001
+notIdentical.alwaysTrue,0.397,p < 0.001
+offsetAccess.invalidOffset,0.385,p < 0.001
+property.notFound,0.379,p < 0.001
+isset.offset,0.375,p < 0.001
+booleanAnd.leftAlwaysTrue,0.365,p < 0.001
+booleanAnd.rightAlwaysTrue,0.361,p < 0.001
+echo.nonString,0.357,p < 0.001
+cast.int,0.351,p < 0.001

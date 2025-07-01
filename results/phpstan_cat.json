@@ -1,0 +1,20 @@
+{
+  "cast.int": "Type Mismatch",
+  "isset.offset": "Array Access",
+  "property.nonObject": "Type Mismatch",
+  "foreach.nonIterable": "Array Access",
+  "property.notFound": "Undefined Reference",
+  "offsetAccess.notFound": "Array Access",
+  "return.unusedType": "Unused Code",
+  "offsetAccess.nonArray": "Array Access",
+  "variable.undefined": "Undefined Reference",
+  "offsetAccess.invalidOffset": "Array Access",
+  "echo.nonString": "Type Mismatch",
+  "identical.alwaysFalse": "Logical Conditions",
+  "booleanAnd.rightAlwaysTrue": "Logical Conditions",
+  "booleanNot.alwaysFalse": "Logical Conditions",
+  "cast.double": "Type Mismatch",
+  "booleanAnd.leftAlwaysTrue": "Logical Conditions",
+  "notIdentical.alwaysTrue": "Logical Conditions",
+  "empty.variable": "Undefined Reference"
+}

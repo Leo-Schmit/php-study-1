@@ -1,0 +1,7 @@
+warning_type,rho,p_value
+PhanUndeclaredVariableDim,0.441,p < 0.001
+PhanUndeclaredGlobalVariable,0.432,p < 0.001
+PhanTypeMismatchArgumentNullable,0.416,p < 0.001
+PhanPossiblyUndeclaredVariable,0.41,p < 0.001
+PhanUndeclaredClassConstant,0.377,p < 0.001
+PhanParamSignatureMismatch,0.358,p < 0.001
