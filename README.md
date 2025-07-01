@@ -3,7 +3,7 @@
 ## Quick Start
 
 - **Docker** and **docker-compose** must be installed.
-- For the `make collect` command, you **must** set the `GITHUB_TOKEN` environment variable (for GitHub API access).
+- For the `make collect` command, you **must** set the `GITHUB_TOKEN` environment variable (for GitHub GraphQL access).
 
 Example (Linux/Mac):
 
@@ -26,8 +26,8 @@ Example command usage:
 
 ```sh
 export GITHUB_TOKEN=your_token_here   # Required for make collect
-make results                          # Generate statistics from data.json
-make collect                          # collect the main analysis (requires GITHUB_TOKEN) and create data.json
+make results                          # Generate statistics from results/data.json
+make collect                          # Collect the main analysis (requires GITHUB_TOKEN) and create results/data.json
 make shell                            # Open a bash shell in the container for debug
 make build                            # Build the Docker image
 ```
