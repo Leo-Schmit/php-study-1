@@ -210,6 +210,8 @@ def generate_faceted_plots(analyzers, base_dir, width, dpi, fig_width, inch_per_
 def classify_evans(rho):
     if rho < 0.20:
         return "very weak"
+    if rho < 0.35:
+        return "weak"
     if rho < 0.40:
         return "near-moderate"
     if rho < 0.60:
