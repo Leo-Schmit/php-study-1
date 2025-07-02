@@ -13,7 +13,9 @@ export GITHUB_TOKEN=your_token_here
 
 ### MIN\_R\_S Parameter
 
-The `MIN_R_S` parameter defines the cutoff value for the correlation coefficient. By default:
+The `MIN_R_S` parameter defines the cutoff value for the correlation coefficient. If you set MIN_R_S below 0.35, the resulting categories may include warnings for which groups are not defined. For such warnings, the category will be marked as "other". To add categories for additional warnings, edit the files phpstan_cat.json, psalm_cat.json, and phan_cat.json in the "results" directory.
+
+By default:
 
 - `MIN_R_S` is set to `0.35`.
 
@@ -23,10 +25,10 @@ You can override this default when running the `make results` command:
 make results MIN_R_S=<your_threshold>
 ```
 
-For example, to include only values with r_s ≥ 0.5:
+For example, to include only values with r_s ≥ 0.4:
 
 ```sh
-make results MIN_R_S=0.5
+make results MIN_R_S=0.4
 ```
 
 
